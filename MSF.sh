@@ -7,7 +7,7 @@
 # VARIABLES
 #
 PWD=$(pwd)
-source ${PWD}/Colors.sh
+source ${PWD}/Scorpio28/Colors.sh
 #
 # FUNCIONES
 #
