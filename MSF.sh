@@ -33,6 +33,7 @@ echo -e "${verde}┌════════════════════
 echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
+apt install git curl wget nmap -y 
 apt install -y python
 pkg install -y nmap
 pkg install -y ruby
