@@ -95,6 +95,8 @@ echo -e "${verde}
 "${blanco}
 echo -e ""
 sleep 0.5
+#!/data/data/com.termux/files/usr/bin/bash
+
 # Remove  Old Folder if exist
 find $HOME -name "metasploit-*" -type d -exec rm -rf {} \;
 
