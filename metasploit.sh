@@ -34,10 +34,10 @@ sleep 0.5
 PWD=$(pwd)
 source ${PWD}/data/data/com.termux/files/home
 apt update && pkg upgrade -y
-apt install git curl wget nmap -y 
+apt install git curl wget nmap -y
+apt-get install -y espeak
 apt install -y python
 pkg install -y nmap
-pkg install -y ruby
 pkg install -y php
 pkg install -y tor
 pkg install -y openssh
@@ -65,10 +65,6 @@ pkg insnall -y jq
 pkg install -y nodejs
 pkg install -y nodejs-lts
 pkg install -y grep
-yes | pkg install netcat-openbsd
-yes | pkg install mutt
-yes | pkg install nodejs
-apt-get install -y espeak
 sleep 0.5
 echo -e "${verde}
 ┌═══════════════════════════┐
@@ -77,8 +73,8 @@ echo -e "${verde}
 "${blanco}
 echo -e ""
 sleep 0.5
-pkg unistall -y ruby
-bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.22
+pkg unistall -y ruby &> /dev//null
+bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.22 &> /dev//null
 sleep 0.5
 echo -e "${verde}
 ┌═══════════════════════┐
