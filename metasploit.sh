@@ -1,4 +1,4 @@
-#!/bim/bash
+#!/data/data/com.termux/files/usr/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -109,7 +109,7 @@ msfpath='/data/data/com.termux/files/home'
 
 apt update && apt upgrade
 
-apt install -y binutils libiconv zlib autoconf bison clang coreutils curl findutils git apr apr-util libffi libgmp libpcap postgresql readline libsqlite openssl libtool libxml2 libxslt ncurses pkg-config wget make ruby libgrpc termux-tools ncurses-utils ncurses unzip zip tar termux-elf-cleaner
+apt install -y binutils libiconv zlib autoconf bison clang coreutils curl findutils git apr apr-util libffi libgmp libpcap postgresql readline libsqlite openssl libtool libxml2>
 # Many phones are claiming libxml2 not found error
 ln -sf $PREFIX/include/libxml2/libxml $PREFIX/include/
 
