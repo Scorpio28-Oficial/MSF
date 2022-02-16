@@ -32,6 +32,8 @@ echo -e "${verde}┌════════════════════
 └═════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
+PWD=$(pwd)
+source ${PWD}/data/data/com.termux/files/home
 apt update && pkg upgrade -y
 apt install git curl wget nmap -y 
 apt install -y python
