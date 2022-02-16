@@ -85,6 +85,8 @@ echo -e "${verde}
 └═══════════════════════┘
 "${blanco}
 echo -e ""
+echo -e -n "${verde} P R E P A R A N D O  L A  I N S T A L A C I Ó N . . ." |pv -qL 8
+echo -e ""
 sleep 0.5
 echo -e "${verde}
 ┌═════════════════════════════════┐
