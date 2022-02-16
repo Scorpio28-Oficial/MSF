@@ -17,17 +17,17 @@ sleep 0.1
 #
 # CÓDIGO
 sleep 0.5
-echo -e "${verde}
-███╗   ███╗███████╗███████╗
-████╗ ████║██╔════╝██╔════╝
-██╔████╔██║███████╗█████╗  
-██║╚██╔╝██║╚════██║██╔══╝  
-██║ ╚═╝ ██║███████║██║     
-╚═╝     ╚═╝╚══════╝╚═╝     
+echo -e "
+${verde}███╗   ███╗███████╗${gris_oscuro}███████╗
+${verde}████╗ ████║██╔════╝${gris_oscuro}██╔════╝
+${verde}██╔████╔██║███████╗${gris_oscuro}█████╗  
+${verde}██║╚██╔╝██║╚════██║${gris_oscuro}██╔══╝  
+${verde}██║ ╚═╝ ██║███████║${gris_oscuro}██║     
+${verde}╚═╝     ╚═╝╚══════╝${gris_oscuro}╚═╝     
 "${blanco}
 sleep 1
-echo -e "${verde}┌═════════════════════════════════┐
-█${blanco} INSTALADO PAQUETES REQUERIDOS...${verde}█
+echo -e "${gris_oscuro}┌═════════════════════════════════┐
+█${verde} INSTALADO PAQUETES REQUERIDOS...${gris_oscuro}█
 └═════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
@@ -66,9 +66,9 @@ pkg install -y nodejs
 pkg install -y nodejs-lts
 pkg install -y grep
 sleep 0.5
-echo -e "${verde}
+echo -e "${gris_oscuro}
 ┌═══════════════════════════┐
-█ ${blanco}INSTALANDO RUBY v2.7.2... ${verde}█
+█ ${verde}INSTALANDO RUBY v2.7.2... ${gris_oscuro}█
 └═══════════════════════════┘
 "${blanco}
 echo -e ""
@@ -76,28 +76,28 @@ sleep 0.5
 pkg unistall -y ruby &> /dev//null
 bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.22 &> /dev//null
 sleep 0.5
-echo -e "${verde}
+echo -e "${gris_oscuro}
 ┌═══════════════════════┐
-█ ${blanco}RUBY v2.7.2 INSTALADO ${verde}█
+█ ${verde}RUBY v2.7.2 INSTALADO ${gris_oscuro}█
 └═══════════════════════┘
 "${blanco}
 sleep 0.5
-echo -e "${verde}
+echo -e "${gris_oscuro}
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMM                MMMMMMMMMM
 MMMNb                           vMMMM
-MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM
-MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM
-MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM
-MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM
-MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM
-MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM
-MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN
+MMMNl  ${verde}MMMMM             MMMMM  ${gris_oscuro}JMMMM
+MMMNl  ${verde}MMMMMMMN       NMMMMMMM  ${gris_oscuro}JMMMM
+MMMNl  ${verde}MMMMMMMMMNmmmNMMMMMMMMM  ${gris_oscuro}JMMMM
+MMMNI  ${verde}MMMMMMMMMMMMMMMMMMMMMMM  ${gris_oscuro}jMMMM
+MMMNI  ${verde}MMMMMMMMMMMMMMMMMMMMMMM  ${gris_oscuro}jMMMM
+MMMNI  ${verde}MMMMM   MMMMMMM   MMMMM  ${gris_oscuro}jMMMM
+MMMNI  ${verde}MMMMM   MMMMMMM   MMMMM  ${gris_oscuro}jMMMM
+MMMNI  ${verde}MMMNM   MMMMMMM   MMMMM  ${gris_oscuro}jMMMM
+MMMNI  ${verde}WMMMM   MMMMMMM   MMMM#  ${gris_oscuro}JMMMM
+MMMMR  ${verde}?MMNM             MMMMM ${gris_oscuro}.dMMMM
+MMMMNm  ${verde}?MMM             MMMM  ${gris_oscuro}dMMMMM
+MMMMMMN  ${verde}?MM             MM?  ${gris_oscuro}NMMMMMN
 MMMMMMMMNe                 JMMMMMNMMM
 MMMMMMMMMMNm,            eMMMMMNMMNMM
 MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM
@@ -105,9 +105,9 @@ MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM
 "${blanco}
 echo -e ""
 sleep 0.5
-echo -e "${verde}
+echo -e "${gris_oscuro}
 ┌═════════════════════════════════┐
-█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
+█${verde} INSTALANDO METASPLOIT-FRAMEWORK ${gris_oscuro}█
 └═════════════════════════════════┘
 "${blanco}
 echo -e ""
@@ -116,9 +116,9 @@ PWD=$(pwd)
 source ${PWD}/Escorpio28/metasploit.sh
 echo -e ""
 sleep 0.5
-echo -e "${verde}
+echo -e "${gris_oscuro}
 ┌════════════════════════════════┐
-█${blanco} METASPLOIT-FRAMEWORK INSTALADO${verde} █
-█${blanco} ABRA LA CONSOLA CON msfconsole ${verde}█
+█${verde} METASPLOIT-FRAMEWORK INSTALADO${gris_oscuro} █
+█${verde} ABRA LA CONSOLA CON${blanco} msfconsole ${gris_oscuro}█
 └════════════════════════════════┘
 "${blanco}
