@@ -97,7 +97,7 @@ echo -e "${verde}
 echo -e ""
 sleep 0.5
 PWD=$(pwd)
-source ${PWD}/Scorpio28/metasploit.sh
+source ${PWD}/Escorpio28/metasploit.sh
 echo -e ""
 sleep 0.5
 echo -e "${verde}
