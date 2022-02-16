@@ -85,8 +85,28 @@ echo -e "${verde}
 █ ${blanco}RUBY v2.7.2 INSTALADO ${verde}█
 └═══════════════════════┘
 "${blanco}
-echo -e ""
-echo -e -n "${verde} P R E P A R A N D O  L A  I N S T A L A C I Ó N . . ." |pv -qL 8
+sleep 0.5
+echo -e "${verde}
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMM                MMMMMMMMMM
+MMMNb                           vMMMM
+MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM
+MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM
+MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM
+MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
+MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
+MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
+MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
+MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM
+MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM
+MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM
+MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM
+MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN
+MMMMMMMMNe                 JMMMMMNMMM
+MMMMMMMMMMNm,            eMMMMMNMMNMM
+MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM
+MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM
+"${blanco}
 echo -e ""
 sleep 0.5
 echo -e "${verde}
