@@ -11,7 +11,7 @@ source ${PWD}/Colors.sh
 #
 # FUNCIONES
 #
-function Ruby_v2.7.2 {
+function MSF_v2.7.2 {
 sleep 0.1
 }
 #
