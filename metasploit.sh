@@ -89,7 +89,7 @@ echo -e ""
 sleep 0.5
 echo -e "${verde}
 ┌════════════════════════════════┐
-█${blanco} METASPLOIT-FRAMEWORK INSTALADO${blanco} █
-█${blanco} ABRA LA CONSOLA CON msfconsole ${blanco}█
+█${blanco} METASPLOIT-FRAMEWORK INSTALADO${verde} █
+█${blanco} ABRA LA CONSOLA CON msfconsole ${verde}█
 └════════════════════════════════┘
 "${blanco}
