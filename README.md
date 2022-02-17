@@ -2,7 +2,7 @@
 <p align="center">
 	<img src="https://i.imgur.com/AjYrodX.jpeg" width="600px" hight="100px">
 </p>
-* [+] Es un framework de código abierto para la auditoria en seguridad informática.
+* [+] Es un framework de código abierto para la auditoria en la seguridad informática.
 
 ### INSTALACIÓN
 
