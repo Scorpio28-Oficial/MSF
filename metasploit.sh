@@ -27,9 +27,9 @@ echo -e "${verde}
 "${blanco}
 echo -e ""
 sleep 0.5
-echo -e "${verde}┌═════════════════════════════════┐
-█${blanco} INSTALADO PAQUETES REQUERIDOS...${verde}█
-└═════════════════════════════════┘${blanco}"
+echo -e "${verde}┌══════════════════════════════════┐
+█${blanco} INSTALANDO PAQUETES REQUERIDOS...${verde}█
+└══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
 PWD=$(pwd)
