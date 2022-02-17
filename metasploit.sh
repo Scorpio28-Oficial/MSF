@@ -25,6 +25,7 @@ echo -e "${verde}
 ██║ ╚═╝ ██║███████║██║     
 ╚═╝     ╚═╝╚══════╝╚═╝     
 "${blanco}
+echo -e ""
 sleep 0.5
 echo -e "${verde}┌═════════════════════════════════┐
 █${blanco} INSTALADO PAQUETES REQUERIDOS...${verde}█
@@ -65,12 +66,12 @@ echo -e "${verde}
 █${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
 └═════════════════════════════════┘
 "${blanco}
-echo -e ""
 sleep 0.5
+echo -e ""
 PWD=$(pwd)
 source ${PWD}/Escorpio28/metasploit.sh
-echo -e ""
 sleep 0.5
+echo -e ""
 echo -e "${verde}
 ┌════════════════════════════════┐
 █${blanco} METASPLOIT-FRAMEWORK INSTALADO${verde} █
