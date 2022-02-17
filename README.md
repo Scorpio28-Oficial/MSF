@@ -16,3 +16,7 @@
 
 * ./metasploit-framework.sh
 ```
+
+#### COMUNICAD
+
+* [+] https://t.me/Informatic_in_Termux
