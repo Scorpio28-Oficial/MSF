@@ -19,4 +19,4 @@
 
 #### COMUNICAD
 
-* [+] https://t.me/Informatic_in_Termux
+https://t.me/Informatic_in_Termux
