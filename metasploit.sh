@@ -27,9 +27,9 @@ echo -e "${verde}
 "${blanco}
 echo -e ""
 sleep 0.5
-echo -e "${verde}┌═══════════════════════════════════┐
+echo -e "${verde}┌══════════════════════════════════┐
 █${blanco} INSTALANDO PAQUETES REQUERIDOS...${verde}█
-└═══════════════════════════════════┘${blanco}"
+└══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
