@@ -27,5 +27,3 @@ https://t.me/Informatic_in_Termux
 
 ###### By: Scorpio28
 
-
-##### TEAM: https://t.me/Informatic_in_Termux
