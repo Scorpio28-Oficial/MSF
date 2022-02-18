@@ -44,7 +44,6 @@ chmod 777 *.sh
 chmod 711 ruby.sh
 ./ruby.sh
 clear
-cd MSF
 sleep 0.5
 echo -e "${verde}
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -77,7 +76,7 @@ echo -e "${verde}
 sleep 0.5
 echo -e ""
 PWD=$(pwd)
-source ${PWD}/Escorpio28/metasploit.sh
+source ${PWD}/MSF/Escorpio28/metasploit.sh
 sleep 0.5
 echo -e ""
 echo -e "${verde}
