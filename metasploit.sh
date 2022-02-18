@@ -42,8 +42,9 @@ cd ${HOME}/MSF/Escorpio28
 chmod 777 *.sh
 chmod 711 ruby.sh
 ./ruby.sh
+cd {$HOME}
+clear
 sleep 0.5
-echo -e ""
 echo -e "${verde}
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMM                MMMMMMMMMM
