@@ -15,9 +15,9 @@
 
 * cd MSF
 
-* chmod 777 metasploit-framework.sh
+* chmod 777 metasploit.sh
 
-* ./metasploit-framework.sh
+* ./metasploit.sh
 ```
 
 #### COMUNICAD
