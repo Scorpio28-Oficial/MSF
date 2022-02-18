@@ -34,8 +34,6 @@ echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
-cd
-cd MSF
 cd Escorpio28
 unzip termux-ruby.zip
 rm install.zip
@@ -43,7 +41,7 @@ cd termux-ruby
 chmod 777 *.sh
 chmod 711 ruby.sh
 ./ruby.sh
-clear
+cd ..
 sleep 0.5
 echo -e "${verde}
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
