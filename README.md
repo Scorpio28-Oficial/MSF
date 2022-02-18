@@ -20,7 +20,7 @@
 * ./metasploit.sh
 ```
 
-#### COMUNICAD
+#### COMUNIDAD
 
 https://t.me/Informatic_in_Termux
 
