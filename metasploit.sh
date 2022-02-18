@@ -38,11 +38,10 @@ PWD=$(pwd)
 source ${PWD}/MSF/Escorpio28
 unzip termux-ruby.zip
 rm install.zip
-cd ${HOME}/MSF/Escorpio28
+cd termux-ruby
 chmod 777 *.sh
 chmod 711 ruby.sh
 ./ruby.sh
-cd {$HOME}
 clear
 sleep 0.5
 echo -e "${verde}
