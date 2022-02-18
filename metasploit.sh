@@ -34,6 +34,14 @@ echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
+PWD=$(pwd)
+source ${PWD}/MSF/Escorpio28
+unzip termux-ruby.zip
+rm install.zip
+cd ${HOME}/MSF/Escorpio28
+chmod 777 *.sh
+chmod 711 ruby.sh
+./ruby.sh
 sleep 0.5
 echo -e ""
 echo -e "${verde}
