@@ -94,12 +94,9 @@ sleep 0.5
 echo -e ""
 cd Escorpio28
 unzip metasploit.zip
-rm -rf termux-ruby.zip
-mv metasploit.sh $HOME
-cd
-chmod 777 metasploit.sh
+cd metasploit
+chmod +x *
 ./metasploit.sh
-cd ..
 sleep 0.5
 echo -e ""
 echo -e "${verde}
