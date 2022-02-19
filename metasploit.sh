@@ -35,17 +35,15 @@ echo -e "${verde}
 echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
-apt install git curl wget nmap ruby -y
-PWD=$(pwd)
-source ${PWD}/data/data/com.termux/files/home/MSF/Escorpio28
+apt install git curl wget nmap -y
+cd Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
+cd termux-ruby
 chmod +x *
 chmod 711 ruby.sh
 ./ruby.sh
-PWD=$(pwd)
-source ${PWD}/data/data/com.termux/files/home/MSF
-echo -e ""
+cd ..
 sleep 1
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
@@ -104,7 +102,7 @@ echo -e "${verde}
 "${blanco}
 sleep 0.5
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
+##!/data/data/com.termux/files/usr/bin/bash
 
 # Remove  Old Folder if exist 
 find $HOME -name "metasploit-*" -type d -exec rm -rf {} \;
@@ -175,7 +173,7 @@ cd ${PREFIX}/bin && curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit
 
 ln -sf $(which msfconsole) $PREFIX/bin/msfvenom
 
-echo -e "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole."
+echo "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole."
 echo -e ""
 sleep 0.5
 echo -e "${verde}
