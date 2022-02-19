@@ -34,7 +34,7 @@ echo -e "${verde}┌════════════════════
 echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
-apt install git curl wget nmap -y
+apt install git curl wget nmap ruby -y
 cd Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
