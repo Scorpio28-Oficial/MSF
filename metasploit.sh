@@ -174,7 +174,7 @@ cd ${PREFIX}/bin && curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit
 
 ln -sf $(which msfconsole) $PREFIX/bin/msfvenom
 
-echo "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole."
+echo -e "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole."
 echo -e ""
 sleep 0.5
 echo -e "${verde}
