@@ -36,8 +36,6 @@ sleep 0.5
 apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
 pkg install -y gnupg
-pkg upgrade -y -o Dpkg::Options::="--force-confnew"
-pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
 apt purge ruby -y
