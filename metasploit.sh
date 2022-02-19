@@ -33,12 +33,9 @@ echo -e "${verde}┌════════════════════
 └══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
+cd $HOME
 apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
-pkg install -y gnupg
-python3 -m pip install --upgrade pip
-python3 -m pip install requests
-apt purge ruby -y
 cd Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
@@ -47,9 +44,9 @@ chmod +x *
 chmod 711 ruby.sh
 ./ruby.sh
 cd ..
+cd $HOME
 sleep 1
-echo -e "${verde}
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
 sleep 0.1
