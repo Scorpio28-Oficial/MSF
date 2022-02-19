@@ -81,7 +81,7 @@ echo -e "${verde}MMMMMMMMMMNm,            eMMMMMNMMNMM"
 sleep 0.1
 echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
 sleep 0.1
-echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"
+echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM
 "${blanco}
 sleep 0.5
 echo -e ""
