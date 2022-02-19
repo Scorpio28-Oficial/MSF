@@ -35,8 +35,6 @@ echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
 apt install git curl wget nmap -y
-pkg unistall -y ruby &> /dev//null
-bash <(curl -fsSL "https://git.io/abhacker-repo") --install ruby=2.7.22 &> /dev//null
 cd Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
@@ -166,7 +164,6 @@ cd ${PREFIX}/bin && curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit
 ln -sf $(which msfconsole) $PREFIX/bin/msfvenom
 
 echo "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole."
-
 sleep 0.5
 echo -e ""
 echo -e "${verde}
