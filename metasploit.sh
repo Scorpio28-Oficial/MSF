@@ -28,23 +28,24 @@ echo -e "${verde}
 sleep 0.5
 echo -e ""
 sleep 1
-echo -e "${verde}┌══════════════════════════════════┐
+echo -e "${verde}
+┌══════════════════════════════════┐
 █${blanco} INSTALANDO PAQUETES REQUERIDOS...${verde}█
 └══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
-cd $HOME
 apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
-cd Escorpio28
+PWD=$(pwd)
+source ${PWD}/data/data/com.termux/files/home/MSF/Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
-cd termux-ruby
 chmod +x *
 chmod 711 ruby.sh
 ./ruby.sh
-cd ..
-cd $HOME
+PWD=$(pwd)
+source ${PWD}/data/data/com.termux/files/home/MSF
+echo -e ""
 sleep 1
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
