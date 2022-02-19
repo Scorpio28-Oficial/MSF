@@ -25,8 +25,9 @@ echo -e "${verde}
 ██║ ╚═╝ ██║███████║██║     
 ╚═╝     ╚═╝╚══════╝╚═╝     
 "${blanco}
-echo -e ""
 sleep 0.5
+echo -e ""
+sleep 1
 echo -e "${verde}┌══════════════════════════════════┐
 █${blanco} INSTALANDO PAQUETES REQUERIDOS...${verde}█
 └══════════════════════════════════┘${blanco}"
@@ -36,34 +37,53 @@ apt update && pkg upgrade -y
 apt install git curl wget nmap ruby -y
 cd Escorpio28
 unzip termux-ruby.zip
-rm install.zip
+rm -rf termux-ruby.zip
 cd termux-ruby
-chmod 777 *.sh
+chmod +x *
 chmod 711 ruby.sh
 ./ruby.sh
 cd ..
-sleep 0.5
+sleep 1
 echo -e "${verde}
-MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-MMMMMMMMMMM                MMMMMMMMMM
-MMMNb                           vMMMM
-MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM
-MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM
-MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM
-MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM
-MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM
-MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM
-MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM
-MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN
-MMMMMMMMNe                 JMMMMMNMMM
-MMMMMMMMMMNm,            eMMMMMNMMNMM
-MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM
-MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+sleep 0.1
+echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
+sleep 0.1
+echo -e "${verde}MMMNb                           vMMMM"
+sleep 0.1
+echo -e "${verde}MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM"
+sleep 0.1
+echo -e "${verde}MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM"
+sleep 0.1
+echo -e "${verde}MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM"
+sleep 0.1
+echo -e "${verde}MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM"
+sleep 0.1
+echo -e "${verde}MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM"
+sleep 0.1
+echo -e "${verde}MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM"
+sleep 0.1
+echo -e "${verde}MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN"
+sleep 0.1
+echo -e "${verde}MMMMMMMMNe                 JMMMMMNMMM"
+sleep 0.1
+echo -e "${verde}MMMMMMMMMMNm,            eMMMMMNMMNMM"
+sleep 0.1
+echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
+sleep 0.1
+echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"
 "${blanco}
+sleep 0.5
 echo -e ""
 sleep 1
 echo -e "${verde}
