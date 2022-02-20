@@ -103,7 +103,7 @@ echo -e "${verde}
 ╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
-##!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 # Remove  Old Folder if exist 
 find $HOME -name "metasploit-*" -type d -exec rm -rf {} \;
@@ -119,10 +119,6 @@ apt install wget -y
 apt install -nmap -y
 apt install ruby -y
 apt install git -y
-
-pkg install unstable-repo root-repo x11-repo
-
-bash <(curl fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2
 
 apt install -y binutils libiconv zlib autoconf bison clang coreutils curl findutils git apr apr-util libffi libgmp libpcap postgresql readline libsqlite openssl libtool libxml2 libxslt ncurses pkg-config wget make ruby libgrpc termux-tools ncurses-utils ncurses unzip zip tar termux-elf-cleaner
 # Many phones are claiming libxml2 not found error
