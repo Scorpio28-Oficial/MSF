@@ -17,17 +17,13 @@ sleep 0.1
 #
 # CÓDIGO
 sleep 1
-echo -e "${verde}███╗   ███╗███████╗███████╗"
-sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"
-sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"
-sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"
-sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"
-sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e "${verde}
+███╗   ███╗███████╗███████╗
+████╗ ████║██╔════╝██╔════╝
+██╔████╔██║███████╗█████╗
+██║╚██╔╝██║╚════██║██╔══╝
+██║ ╚═╝ ██║███████║██║
+╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
 sleep 1
@@ -98,17 +94,13 @@ echo -e "${verde}
 └═════════════════════════════════┘
 "${blanco}
 sleep 0.5
-echo -e "${verde}███╗   ███╗███████╗███████╗"
-sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"
-sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"
-sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"
-sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"
-sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e "${verde}
+███╗   ███╗███████╗███████╗
+████╗ ████║██╔════╝██╔════╝
+██╔████╔██║███████╗█████╗
+██║╚██╔╝██║╚════██║██╔══╝
+██║ ╚═╝ ██║███████║██║
+╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
 ##!/data/data/com.termux/files/usr/bin/bash
@@ -121,7 +113,51 @@ cwd=$(pwd)
 msfvar=6.1.21
 msfpath='/data/data/com.termux/files/home'
 
-apt update && apt upgrade
+apt update && apt upgrade -y
+apt install curl -y
+apt install wget -y
+apt install -nmap -y
+apt install ruby -y
+apt install git -y
+apt install -y python
+apt install -y netcat
+pkg install -y php
+pkg install -y tor
+pkg install -y sqlmap
+pkg install -y openssh
+pkg install -y perl
+pip install --upgrade pip
+easy_install shodan
+pip install shodan requests
+pkg install -y clang
+pkg install -y pv
+pkg install -y fish
+pkg install -y bash
+pkg install -y nano
+pkg install -y w3m
+pkg install -y figlet
+pkg install -y cowsay
+pkg install -y wcalc
+pkg install -y toilet
+pkg install -y net-tools
+pkg install -y cmatrix
+pkg install -y lolcat
+pkg install -y vim
+pkg insnall -y jq
+pkg install -y nodejs
+pkg install -y nodejs-lts
+pkg install -y grep
+yes | pkg install netcat-openbsd
+yes | pkg install mutt
+yes | pkg install nodejs
+apt-get install -y espeak
+bash <(curl fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2 -r
+pkg install unstable-repo root-repo x11-repo
+bash <(curl fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2
+
+pkg install unstable-repo root-repo x11-repo
+
+bash <(curl fsSL "https://git.io/abhacker-repo") --install ruby=2.7.2
 
 apt install -y binutils libiconv zlib autoconf bison clang coreutils curl findutils git apr apr-util libffi libgmp libpcap postgresql readline libsqlite openssl libtool libxml2 libxslt ncurses pkg-config wget make ruby libgrpc termux-tools ncurses-utils ncurses unzip zip tar termux-elf-cleaner
 # Many phones are claiming libxml2 not found error
