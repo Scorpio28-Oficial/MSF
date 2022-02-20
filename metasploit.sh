@@ -17,13 +17,17 @@ sleep 0.1
 #
 # CÓDIGO
 sleep 1
-echo -e "${verde}
-███╗   ███╗███████╗███████╗
-████╗ ████║██╔════╝██╔════╝
-██╔████╔██║███████╗█████╗  
-██║╚██╔╝██║╚════██║██╔══╝  
-██║ ╚═╝ ██║███████║██║     
-╚═╝     ╚═╝╚══════╝╚═╝     
+echo -e "${verde}███╗   ███╗███████╗███████╗"
+sleep 0.1
+echo -e "${verde}████╗ ████║██╔════╝██╔════╝"
+sleep 0.1
+echo -e "${verde}██╔████╔██║███████╗█████╗"
+sleep 0.1
+echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"
+sleep 0.1
+echo -e "${verde}██║ ╚═╝ ██║███████║██║"
+sleep 0.1
+echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"
 "${blanco}
 sleep 0.5
 echo -e ""
@@ -35,7 +39,11 @@ echo -e "${verde}
 echo -e ""
 sleep 0.5
 apt update && pkg upgrade -y
-apt install git curl wget nmap -y
+apt install curl -y
+apt install wget -y
+apt install -nmap -y
+apt install ruby -y
+apt install git -y
 cd Escorpio28
 unzip termux-ruby.zip
 rm -rf termux-ruby.zip
@@ -91,14 +99,17 @@ echo -e "${verde}
 └═════════════════════════════════┘
 "${blanco}
 sleep 0.5
-echo -e ""
-echo -e "${verde}
-███╗   ███╗███████╗███████╗
-████╗ ████║██╔════╝██╔════╝
-██╔████╔██║███████╗█████╗  
-██║╚██╔╝██║╚════██║██╔══╝  
-██║ ╚═╝ ██║███████║██║     
-╚═╝     ╚═╝╚══════╝╚═╝     
+echo -e "${verde}███╗   ███╗███████╗███████╗"
+sleep 0.1
+echo -e "${verde}████╗ ████║██╔════╝██╔════╝"
+sleep 0.1
+echo -e "${verde}██╔████╔██║███████╗█████╗"
+sleep 0.1
+echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"
+sleep 0.1
+echo -e "${verde}██║ ╚═╝ ██║███████║██║"
+sleep 0.1
+echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"
 "${blanco}
 sleep 0.5
 echo -e ""
