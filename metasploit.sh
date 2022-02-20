@@ -27,8 +27,7 @@ echo -e "${verde}██║╚██╔╝██║╚════██║██
 sleep 0.1
 echo -e "${verde}██║ ╚═╝ ██║███████║██║"
 sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"
-"${blanco}
+echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
 sleep 1
@@ -109,8 +108,7 @@ echo -e "${verde}██║╚██╔╝██║╚════██║██
 sleep 0.1
 echo -e "${verde}██║ ╚═╝ ██║███████║██║"
 sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"
-"${blanco}
+echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
 ##!/data/data/com.termux/files/usr/bin/bash
