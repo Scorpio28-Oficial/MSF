@@ -33,19 +33,9 @@ echo -e "${verde}
 └══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
-apt update && pkg upgrade -y
-apt install curl -y
-apt install wget -y
-apt install -nmap -y
-apt install ruby -y
-apt install git -y
+pkg install curl wget php openssh openssl -y
 cd Escorpio28
-unzip termux-ruby.zip
-rm -rf termux-ruby.zip
-cd termux-ruby
-chmod +x *
-chmod 711 ruby.sh
-./ruby.sh
+5
 cd ..
 sleep 1
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
