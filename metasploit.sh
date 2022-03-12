@@ -34,9 +34,6 @@ echo -e "${verde}
 echo -e ""
 sleep 0.5
 pkg install curl wget php openssh openssl -y
-cd Escorpio28
-5
-cd ..
 sleep 1
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
