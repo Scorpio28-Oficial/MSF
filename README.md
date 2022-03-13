@@ -6,8 +6,9 @@
 
 ### INSTALACIÓN
 
+###### Eliminar datos de termux y desistalarlo posteriormente instalan la versión mas reciente la abren y una vez instalado los paquetes que se instala la cierra de la barra de notificaciones y la vuelven abrir ejecutando los coma dos que se muestran a Continuación (OJO no actualizen datos ya que te dara error al instalar si no sigues los pasos correctamente dudo que te funcione.
+
 ```
-* apt update && apt upgrade -y
 
 * pkg install -y git
 
