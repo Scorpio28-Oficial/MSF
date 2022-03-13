@@ -10,6 +10,8 @@
 
 ```
 
+* termux-setup-storage
+
 * pkg install -y git
 
 * git clone https://github.com/Scorpio28-Oficial/MSF
