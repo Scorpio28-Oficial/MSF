@@ -94,8 +94,9 @@ echo -e "${verde}
 ╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
+echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
-sleep 1
+sleep 0.5
 echo "
     +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
     |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
