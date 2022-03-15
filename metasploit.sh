@@ -35,7 +35,17 @@ echo -e ""
 sleep 0.5
 pkg install curl wget php openssh openssl -y
 echo -e ""
+echo -e ""
 sleep 1
+echo -e "${verde}
+┌═════════════════════════════════┐
+█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
+└═════════════════════════════════┘
+"${blanco}
+sleep 0.5
+echo -e ""
+#!/data/data/com.termux/files/usr/bin/bash
+sleep 0.5
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
@@ -75,24 +85,7 @@ sleep 0.1
 echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 sleep 0.5
 echo -e ""
-sleep 1
-echo -e "${verde}
-┌═════════════════════════════════┐
-█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
-└═════════════════════════════════┘
-"${blanco}
-sleep 0.5
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
-sleep 0.5
-echo "
-    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
-    |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
-    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
-                +-+-+ +-+-+-+-+-+-+-+
-     BUG FIXED  |b|y| |D|E|D|S|H|I|T|
-                +-+-+ +-+-+-+-+-+-+-+
-"
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
