@@ -33,6 +33,7 @@ echo -e "${verde}
 └══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
+pkg install curl wget php openssh openssl -y
 echo -e ""
 echo -e ""
 sleep 1
@@ -82,6 +83,8 @@ echo -e "${verde}
 └═════════════════════════════════┘
 "${blanco}
 sleep 0.5
+echo -e ""
+sleep 1
 echo -e "${verde}
 ███╗   ███╗███████╗███████╗
 ████╗ ████║██╔════╝██╔════╝
