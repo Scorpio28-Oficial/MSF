@@ -44,6 +44,7 @@ echo -e "${verde}
 "${blanco}
 sleep 0.5
 echo -e ""
+echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
 sleep 0.5
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
