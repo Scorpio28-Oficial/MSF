@@ -219,7 +219,6 @@ echo
 center "*"
 echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
 center "*"
-echo -e ""
 sleep 0.5
 echo -e "${verde}
 ┌════════════════════════════════┐
