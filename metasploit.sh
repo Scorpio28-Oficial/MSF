@@ -26,6 +26,7 @@ echo -e "${verde}
 ╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
 echo -e ""
+echo -e ""
 sleep 1
 echo -e "${verde}
 ┌══════════════════════════════════┐
@@ -35,6 +36,7 @@ echo -e ""
 sleep 0.5
 pkg install curl wget php openssh openssl -y
 sleep 1
+echo -e ""
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
@@ -74,6 +76,7 @@ sleep 0.1
 echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 sleep 0.5
 echo -e ""
+echo -e ""
 sleep 1
 echo -e "${verde}
 ┌═════════════════════════════════┐
@@ -81,6 +84,8 @@ echo -e "${verde}
 └═════════════════════════════════┘
 "${blanco}
 sleep 0.5
+echo -e ""
+echo -e ""
 echo -e "${verde}
 ███╗   ███╗███████╗███████╗
 ████╗ ████║██╔════╝██╔════╝
@@ -89,6 +94,7 @@ echo -e "${verde}
 ██║ ╚═╝ ██║███████║██║
 ╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
+echo -e ""
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
 clear
