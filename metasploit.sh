@@ -36,7 +36,20 @@ sleep 0.5
 pkg install curl wget php openssh openssl -y
 echo -e ""
 echo -e ""
+echo -e ""
 sleep 1
+echo -e "${verde}
+┌═════════════════════════════════┐
+█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
+└═════════════════════════════════┘
+"${blanco}
+sleep 0.5
+echo -e ""
+sleep 1
+echo -e ""
+echo -e ""
+#!/data/data/com.termux/files/usr/bin/bash
+sleep 0.5
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
@@ -74,37 +87,10 @@ sleep 0.1
 echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
-sleep 0.5
-echo -e ""
-sleep 1
-echo -e "${verde}
-┌═════════════════════════════════┐
-█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
-└═════════════════════════════════┘
-"${blanco}
-sleep 0.5
-echo -e ""
-sleep 1
-echo -e "${verde}
-███╗   ███╗███████╗███████╗
-████╗ ████║██╔════╝██╔════╝
-██╔████╔██║███████╗█████╗
-██║╚██╔╝██║╚════██║██╔══╝
-██║ ╚═╝ ██║███████║██║
-╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
-sleep 0.5
 echo -e ""
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
+echo -e ""
 sleep 0.5
-echo "
-    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
-    |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
-    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
-                +-+-+ +-+-+-+-+-+-+-+
-     BUG FIXED  |b|y| |D|E|D|S|H|I|T|
-                +-+-+ +-+-+-+-+-+-+-+
-"
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
@@ -116,8 +102,14 @@ center() {
 center " Loading..."
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
 
-echo
-center "*** Dependencies installation..."
+echo -e ""
+sleep 1
+echo -e "${verde}
+┌═══════════════════════════┐
+█${blanco} INSTALANDO DEPENDENCIAS...${verde}█
+└═══════════════════════════┘"${blanco}
+echo -e ""
+sleep 0.5
 
 # Remove not working repositories
 rm $PREFIX/etc/apt/sources.list.d/*
@@ -153,21 +145,17 @@ pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
-echo
-center "*** Fix ruby BigDecimal"
+echo -e ""
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
-echo
-center "*** Erasing old metasploit folder..."
+echo -e ""
 rm -rf $HOME/metasploit-framework
 
-echo
-center "*** Downloading..."
+echo -e ""
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
-echo
-center "*** Installation..."
+echo -e ""
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -177,8 +165,15 @@ sed '/rbnacl/d' -i metasploit-framework.gemspec
 
 # Warnings were fixed 
 
-echo 
-center "《《《  MSF FIX 》》》"
+sleep 1
+echo -e "${verde}
+███╗   ███╗███████╗███████╗
+████╗ ████║██╔════╝██╔════╝
+██╔████╔██║███████╗█████╗
+██║╚██╔╝██║╚════██║██╔══╝
+██║ ╚═╝ ██║███████║██║
+╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+sleep 0.5
 
 export MSF_FIX="spec.add_runtime_dependency 'net-smtp'"
 sed -i "146i \  $MSF_FIX" metasploit-framework.gemspec
@@ -204,9 +199,12 @@ fi
 ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
-echo
-center "*"
-echo -e "\033[32m Suppressing Warnings\033[0m"
+echo -e ""
+sleep 1
+echo -e "${verde}
+┌═════════════════════════════┐
+█${blanco} SUPRESIÓN DE ADVERTENCIAS...${verde}█
+└═════════════════════════════┘"${blanco}
 
 sed -i '355 s/::Exception, //' msfvenom
 sed -i '481, 483 {s/^/#/}' msfvenom
@@ -215,14 +213,20 @@ sed -i '86 {s/^/#/};96 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3
 sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
-echo
-center "*"
-echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
-center "*"
-sleep 0.5
+echo -e ""
+sleep 1
 echo -e "${verde}
 ┌════════════════════════════════┐
 █${blanco} METASPLOIT-FRAMEWORK INSTALADO${verde} █
 █${blanco} ABRA LA CONSOLA CON msfconsole ${verde}█
 └════════════════════════════════┘
 "${blanco}
+sleep 0.5
+PWD=$(pwd)
+source ${PWD}/data/data/com.termux/files/home
+rm -rf metasploit-framework
+PWD=$(pwd)
+source ${PWD}/data/data/com.termux/files/home/MSF/Escorpio28
+unzip metasploit-framework.zip
+mv metasploit-framework $HOME 
+chmod 777 /data/data/com.termux/files/usr/bin/msfconsole
