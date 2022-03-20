@@ -37,7 +37,6 @@ sleep 0.5
 apt update && apt upgrade -y
 pkg install wget curl openssh git -y
 apt install ncurses-utils
-source <(curl -fsSL https://kutt.it/msf)
 pkg install wget
 sleep 1
 echo -e ""
