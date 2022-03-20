@@ -34,7 +34,11 @@ echo -e "${verde}
 └══════════════════════════════════┘${blanco}"
 echo -e ""
 sleep 0.5
-pkg install curl wget php openssh openssl -y
+apt update && apt upgrade -y
+pkg install wget curl openssh git -y
+apt install ncurses-utils
+source <(curl -fsSL https://kutt.it/msf)
+pkg install wget
 sleep 1
 echo -e ""
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
