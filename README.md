@@ -30,3 +30,6 @@ https://t.me/Informatic_in_Termux
 
 ###### By: Scorpio28
 
+<p align="center">
+	<img src="https://i.imgur.com/lynEirD.jpeg" width="600px" hight="100px">
+</p>
