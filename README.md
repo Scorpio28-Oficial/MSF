@@ -33,3 +33,6 @@ https://t.me/Informatic_in_Termux
 <p align="center">
 	<img src="https://i.imgur.com/lynEirD.jpeg" width="600px" hight="100px">
 </p>
+<p align="center">
+	<img src="https://i.imgur.com/lynEirD.jpeg" width="600px" hight="100px">
+</p>
