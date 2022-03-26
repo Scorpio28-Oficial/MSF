@@ -100,7 +100,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
-clear
+sleep 0.5
 echo "
     +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
     |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
@@ -220,14 +220,6 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo
-cd Escorpio28
-cd ssl
-cp -r start /data/data/com.termux/files/home/metasploit-framework
-/data/data/com.termux/files/home/metasploit-framework
-chmod 777 start
-./start
-rm -rf start
-cd $HOME
 center "*"
 echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
 center "*"
