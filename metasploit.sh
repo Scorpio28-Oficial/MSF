@@ -220,19 +220,17 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo
-center "*"
-echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
-center "*"
-sleep 0.5
-echo -e ""
-PWD=$(pwd)
-source ${PWD}/Escorpio28/ssl
+cd Escorpio28
+cd ssl
 cp -r start /data/data/com.termux/files/home/metasploit-framework
-PWD=$(pwd)
-source ${PWD}/data/data/com.termux/files/home/metasploit-framework
+/data/data/com.termux/files/home/metasploit-framework
 chmod 777 start
 ./start
 rm -rf start
+cd $HOME
+center "*"
+echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
+center "*"
 sleep 0.5
 echo -e ""
 echo -e "${verde}
