@@ -89,8 +89,15 @@ echo -e "${verde}
 sleep 0.5
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
-sleep 0.5
-echo -e ""
+clear
+echo "
+    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
+    |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
+    +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+
+                +-+-+ +-+-+-+-+-+-+-+
+     BUG FIXED  |b|y| |D|E|D|S|H|I|T|
+                +-+-+ +-+-+-+-+-+-+-+
+"
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
