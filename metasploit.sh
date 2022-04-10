@@ -150,75 +150,62 @@ rm -rf $HOME/metasploit-framework
 
 echo
 center "*** Downloading..."
+cd $HOME
+git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
-# Remove  Old Folder if exist 
-find $HOME -name "metasploit-*" -type d -exec rm -rf {} \;
+echo
+center "*** Installation..."
+cd $HOME/metasploit-framework
+sed '/rbnacl/d' -i Gemfile.lock
+sed '/rbnacl/d' -i metasploit-framework.gemspec
 
+# version 0.118
+# root cause for this problem is missing net-smtp & mini_portile2 version
 
-cwd=$(pwd)
-msfvar=6.1.21
-msfpath='/data/data/com.termux/files/home'
+# Warnings were fixed 
 
-apt update && apt upgrade
+echo 
+center "《《《  MSF FIX 》》》"
 
-apt install -y binutils libiconv zlib autoconf bison clang coreutils curl findutils git apr apr-util libffi libgmp libpcap postgresql readline libsqlite openssl libtool libxml2 libxslt ncurses pkg-config wget make ruby libgrpc termux-tools ncurses-utils ncurses unzip zip tar termux-elf-cleaner
-# Many phones are claiming libxml2 not found error
-ln -sf $PREFIX/include/libxml2/libxml $PREFIX/include/
+export MSF_FIX="spec.add_runtime_dependency 'net-smtp'"
+sed -i "146i \  $MSF_FIX" metasploit-framework.gemspec
+sed -i "277,\$ s/2.8.0/2.2.0/" Gemfile.lock
 
-cd $msfpath
-curl -LO https://github.com/rapid7/metasploit-framework/archive/refs/tags/$msfvar.tar.gz
-
-tar -xf $msfpath/$msfvar.tar.gz
-mv $msfpath/metasploit-framework-$msfvar $msfpath/metasploit-framework
-cd $msfpath/metasploit-framework
-
-# Update rubygems-update
-#if [ "$(gem list -i rubygems-update 2>/dev/null)" = "false" ]; then
-#	gem install --no-document --verbose rubygems-update
-#fi
-
-# Update rubygems
-#update_rubygems
-
-# Install bundler
-#gem install --no-document --verbose bundler:1.17.3
 gem install bundler
+sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
 
-# Installing all gems 
-#bundle config build.nokogiri --use-system-libraries
-gem install nokogiri -v 1.12.5 -- --use-system-libraries
-bundle install 
-echo "Gems installed"
+gem install nokogiri -v 1.8.0 -- --use-system-libraries
 
-# Some fixes
-sed -i "s@/etc/resolv.conf@$PREFIX/etc/resolv.conf@g" $msfpath/metasploit-framework/lib/net/dns/resolver.rb
-find "$msfpath"/metasploit-framework -type f -executable -print0 | xargs -0 -r termux-fix-shebang
-find "$PREFIX"/lib/ruby/gems -type f -iname \*.so -print0 | xargs -0 -r termux-elf-cleaner
-
-echo "Creating database"
-
-mkdir -p $msfpath/metasploit-framework/config && cd $msfpath/metasploit-framework/config
-curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/database.yml
-
-mkdir -p $PREFIX/var/lib/postgresql
-pg_ctl -D "$PREFIX"/var/lib/postgresql stop > /dev/null 2>&1 || true
-
-if ! pg_ctl -D "$PREFIX"/var/lib/postgresql start --silent; then
-    initdb "$PREFIX"/var/lib/postgresql
-    pg_ctl -D "$PREFIX"/var/lib/postgresql start --silent
+gem install actionpack
+bundle update activesupport
+bundle update --bundler
+bundle install -j$(nproc --all)
+$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
+rm ./modules/auxiliary/gather/http_pdf_authors.rb
+if [ -e $PREFIX/bin/msfconsole ];then
+	rm $PREFIX/bin/msfconsole
 fi
-if [ -z "$(psql postgres -tAc "SELECT 1 FROM pg_roles WHERE rolname='msf'")" ]; then
-    createuser msf
+if [ -e $PREFIX/bin/msfvenom ];then
+	rm $PREFIX/bin/msfvenom
 fi
-if [ -z "$(psql -l | grep msf_database)" ]; then
-    createdb msf_database
-fi
+ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
+termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
-rm $msfpath/$msfvar.tar.gz
+echo
+center "*"
+echo -e "\033[32m Suppressing Warnings\033[0m"
 
-cd ${PREFIX}/bin && curl -LO https://raw.githubusercontent.com/Hax4us/Metasploit_termux/master/msfconsole && chmod +x msfconsole
+sed -i '355 s/::Exception, //' msfvenom
+sed -i '481, 483 {s/^/#/}' msfvenom
+sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" /data/data/com.termux/files/home/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
+sed -i '86 {s/^/#/};96 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
+sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb
+ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
-ln -sf $(which msfconsole) $PREFIX/bin/msfvenom
+echo
+center "*"
+echo -e "\033[32m Installation complete. \n Launch metasploit by executing: msfconsole\033[0m"
+center "*"
 
 cd $HOME/metasploit-framework
 sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
