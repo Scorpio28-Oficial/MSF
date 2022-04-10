@@ -91,31 +91,31 @@ echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "[${verde}+${clear}] Have you cleaned your termux? if no script may not work..."
+echo -e "${verde}[${rojo}+${verde}] Have you cleaned your termux? if no script may not work...${blanco}"
 
 echo -e ""
-echo -e "[${amarillo}+${clear}] Please wait..."
+echo -e "${verde}[${rojo}+${verde}] Please wait...${blanco}"
 sleep 3
-echo "[+] Updating termux..."
+echo "${verde}[${rojo}+${verde}] Updating termux...${blanco}"
 sleep 3
-echo -e "[${amarillo}+${clear}] Don't hit Enter use Y/y to update..."
+echo -e "${verde}[${rojo}+${verde}] Don't hit Enter use Y/y to update...${blanco}"
 sleep 3
 
 echo -e ""
 sleep 3
 pkg update;pkg upgrade
 echo -e ""
-echo -e "[${amarillo}+${clear}] Termux updated..."
-echo -e "[${amarillo}+${clear}] Please wait..."
+echo -e "${verde}[${rojo}+${verde}] Termux updated...${blanco}"
+echo -e "${verde}[${rojo}+${verde}] Please wait...${blanco}"
 sleep 3
 
 #
 # Loading spinner
-echo -e "[${amarillo}+${clear}] Loading..."
+echo -e "${verde}[${rojo}+${verde}] Loading...${blanco}"
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
 
 echo -e ""
-echo -e "[${amarillo}+${clear}]Dependencies wget, curl, zip tar, etc..."
+echo -e "${verde}[${rojo}+${verde}]Dependencies wget, curl, zip tar, etc...${blanco}"
 
 
 # Purge installed ruby
@@ -129,17 +129,17 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
-echo -e "[${amarillo}+${clear}]Fix ruby BigDecimal..."
+echo -e "${verde}[${rojo}+${verde}]Fix ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
 echo -e ""
-echo -e "[${amarillo}+${clear}] Downloading the script..."
+echo -e "${verde}[${rojo}+${verde}] Downloading the script...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
-echo -e "[${amarillo}+${clear}] Installation..."
+echo -e "${verde}[${rojo}+${verde}] Installation...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -178,7 +178,7 @@ ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
-echo -e "[${amarillo}+${clear}] Suppressing Warning"
+echo -e "${verde}[${rojo}+${verde}] Suppressing Warning${blanco}"
 
 sed -i '355 s/::Exception, //' msfvenom
 sed -i '481, 483 {s/^/#/}' msfvenom
@@ -193,24 +193,24 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e "[${amarillo}+${clear}] ${blanco} Please open new terminal and type ${cyan}msfconsole${clear}. Is it Working?${clear} [${amarillo}y/n${clear}]:"
+echo -e "${verde}[${rojo}+${verde}] Please open new terminal and type ${cyan}msfconsole${clear}. Is it Working?${clear} [${verde}y/n${clear}]:${blanco}"
 read replyme
 if [[ $replyme == 'y' ]]
 then
-echo -e "[${amarillo}+${clear}] Cheers! Metasploit V6 1.38 has been installed..."
+echo -e "${verde}[${rojo}+${verde}] Cheers! Metasploit V6 1.38 has been installed...${blanco}"
 sleep 2
-echo -e "[${amarillo}+${clear}] See you again..."
+echo -e "${verde}[${rojo}+${verde}] See you again...${blanco}"
 else
-echo -e "[${rojo}+${clear}]${rojo}I'm sorry you pressed no...${clear} "
+echo -e "${verde}[${rojo}+${verde}]I'm sorry you pressed no...${blanco} "
 sleep 1
-echo -e "[${amarillo}+${clear}] Fixing...."
+echo -e "${verde}[${rojo}+${verde}] Fixing....${blanco}"
   sleep 3
-echo -e "[${amarillo}+${clear}] Fixing...."
+echo -e "${verde}[${rojo}+${verde}] Fixing....${blanco}"
   sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
 echo -e ""
-echo -e "[${amarillo}+${clear}] ------------Ttry msfconsole..."
+echo -e "${verde}[${rojo}+${verde}] ------------Ttry msfconsole...${blanco}"
 fi
 
 cd $HOME/metasploit-framework
