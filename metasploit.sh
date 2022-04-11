@@ -186,7 +186,8 @@ sleep 3
 echo -e ""
 echo -e "${verde}[${rojo}+${verde}] Please open new terminal and type ${blanco}msfconsole.${verde} Is it Working? y/n]:${blanco}"
 read replyme
-if [[ $replyme == 'y' ]] then
+if [[ $replyme == 'y' ]]
+then
 echo -e "${verde}[${rojo}+${verde}] Cheers! Metasploit V6 1.38 has been installed...${blanco}"
 sleep 2
 echo -e "${verde}[${rojo}+${verde}] See you again...${blanco}"
