@@ -29,7 +29,6 @@ echo -e ""
 echo -e ""
 sleep 1
 echo -e "${verde}[${rojo}+${verde}] Installing required packages...${blanco}"
-echo -e ""
 sleep 0.5
 apt update && apt upgrade -y
 pkg install wget curl openssh git -y
