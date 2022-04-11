@@ -186,7 +186,7 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e "${verde}[${rojo}+${verde}] Please open new terminal and type ${blanco}msfconsole${clear}. Is it Working?${clear} [${verde}y/n${clear}]:${blanco}"
+echo -e "${verde}[${rojo}+${verde}] Please open new terminal and type ${blanco}msfconsole.${verde} Is it Working? y/n]:${blanco}"
 read replyme
 if [[ $replyme == 'y' ]]
 then
