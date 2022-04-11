@@ -28,10 +28,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}
-┌══════════════════════════════════┐
-█${blanco} INSTALANDO PAQUETES REQUERIDOS...${verde}█
-└══════════════════════════════════┘${blanco}"
+echo -e "${verde}[${rojo+${verde}] Installing required packages...${blanco}"
 echo -e ""
 sleep 0.5
 apt update && apt upgrade -y
@@ -41,11 +38,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}
-┌═════════════════════════════════┐
-█${blanco} INSTALANDO METASPLOIT-FRAMEWORK ${verde}█
-└═════════════════════════════════┘
-"${blanco}
+echo -e "${verde}[${rojo}+${verde}] Installing metasploit-framework...${blanco}"
 sleep 0.5
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
