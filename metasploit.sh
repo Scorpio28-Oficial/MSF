@@ -83,7 +83,7 @@ echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${verde}[${rojo}+${verde}] Have you cleaned your termux? if no script may not work...${blanco}"
+echo -e "${verde}[${rojo}+${verde}] Starting installation...${blanco}"
 
 echo -e ""
 echo -e "${verde}[${rojo}+${verde}] Please wait...${blanco}"
