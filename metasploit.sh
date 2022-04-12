@@ -88,7 +88,7 @@ echo -e "${verde}[${rojo}+${verde}] Starting installation...${blanco}"
 echo -e ""
 echo -e "${verde}[${rojo}+${verde}] Please wait...${blanco}"
 sleep 3
-echo "${verde}[${rojo}+${verde}] Updating termux...${blanco}"
+echo -e "${verde}[${rojo}+${verde}] Updating termux...${blanco}"
 sleep 3
 echo -e "${verde}[${rojo}+${verde}] Do not cancel the installation...${blanco}"
 sleep 3
