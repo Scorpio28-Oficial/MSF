@@ -184,9 +184,8 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e "${verde}[${rojo}+${verde}] Please press the letter 'y' of enter to finish the installation [n/y]: ${blanco}"
-read replyme
-if [[ $replyme == 'y' ]];then
+echo -e "${verde}[${rojo}+${verde}] Please press the letter 'y' of enter to finish the installation [n/y]: ${blanco}";read replyme;if [[ $replyme == 'y' ]];then
+echo -e ""
 echo -e "${verde}[${rojo}+${verde}] Cheers! Metasploit V6.1.38 has been installed...${blanco}"
 sleep 2
 echo -e "${verde}[${rojo}+${verde}] See you again...${blanco}"
