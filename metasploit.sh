@@ -180,7 +180,6 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo -e ""
-echo -e ""
 
 sleep 3
 echo -e ""
