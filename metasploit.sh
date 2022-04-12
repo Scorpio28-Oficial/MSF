@@ -90,7 +90,7 @@ echo -e "${verde}[${rojo}+${verde}] Please wait...${blanco}"
 sleep 3
 echo "${verde}[${rojo}+${verde}] Updating termux...${blanco}"
 sleep 3
-echo -e "${verde}[${rojo}+${verde}] Don't hit Enter use Y/y to update...${blanco}"
+echo -e "${verde}[${rojo}+${verde}] Do not cancel the installation...${blanco}"
 sleep 3
 
 echo -e ""
