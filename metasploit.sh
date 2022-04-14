@@ -183,7 +183,7 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e "${rojo}[${verde}+${rojo}]${verde} Please press the letter 'y' of enter to finish the installation [n/y]: ${blanco}"
+echo -e -n "${rojo}[${verde}+${rojo}]${verde} Please press the letter 'y' of enter to finish the installation [n/y]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
