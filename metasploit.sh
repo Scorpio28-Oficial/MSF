@@ -187,7 +187,7 @@ echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please press the letter 'y' of ent
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Cheers! Metasploit V6.1.38 has been installed...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Cheers! Metasploit V6.1.39 has been installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}*${rojo}]${verde} See you again...${blanco}"
 else
