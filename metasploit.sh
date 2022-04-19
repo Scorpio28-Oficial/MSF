@@ -34,16 +34,16 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing required packages...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Required Packages...${blanco}"
 sleep 0.5
 apt update && apt upgrade -y
-pkg install wget curl openssh git -y
+pkg install wget curl openssh openssl git -y
 apt install ncurses-utils
 pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing metasploit-framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
 sleep 0.5
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
@@ -89,22 +89,22 @@ echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Starting installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Starting Installation...${blanco}"
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Please wait...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Updating termux...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Updating Termux...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Do not cancel the installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Do Not Cancel The Installation...${blanco}"
 sleep 3
 
 echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Termux updated...${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} Please wait...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Termux Updated...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
 sleep 3
 echo -e ""
 
@@ -135,12 +135,12 @@ source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ru
 
 echo -e ""
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Downloading the script...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Downloading The Script...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Installation Gems...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -192,15 +192,15 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please press the letter 'y' of enter to finish the installation [n/y]: ${blanco}"
+echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please Press The Letter 'y' Of Enter To Finish The Installation [n/y]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Cheers! Metasploit V6.1.39 has been installed...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Cheers! Metasploit V6.1.39 Has Been Installed...${blanco}"
 sleep 2
-echo -e "${rojo}[${verde}*${rojo}]${verde} See you again...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} See You Again...${blanco}"
 else
-echo -e "${rojo}[${verde}*${rojo}]${verde} I'm sorry you pressed no...${blanco} "
+echo -e "${rojo}[${verde}*${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
 sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
   sleep 3
@@ -219,5 +219,5 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Metasploit-framework installed.${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} Open the console with: ${blanco}msfconsole${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
