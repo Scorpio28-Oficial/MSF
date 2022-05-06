@@ -196,7 +196,7 @@ echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please Press The Letter 'y' Of Ent
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Cheers! Metasploit V6.1.42 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Cheers! Metasploit V6.1.42 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}*${rojo}]${verde} See You Again...${blanco}"
 else
@@ -219,5 +219,5 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
