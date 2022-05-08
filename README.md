@@ -7,19 +7,19 @@
 ### INSTALACIÓN
 
 ```
-* apt update && apt upgrade -y
+apt update && apt upgrade -y
 
-* termux-setup-storage
+termux-setup-storage
 
-* pkg install -y git
+pkg install -y git
 
-* git clone https://github.com/Scorpio28-Oficial/MSF
+git clone https://github.com/Scorpio28-Oficial/MSF
 
-* cd MSF
+cd MSF
 
-* chmod 777 metasploit.sh
+chmod 777 metasploit.sh
 
-* ./metasploit.sh
+./metasploit.sh
 ```
 
 #### COMUNIDAD
