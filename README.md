@@ -23,7 +23,7 @@ chmod 777 metasploit.sh
 ```
 
 
-<a href="https://t.me/Informatic_in_Termux">TEAM TELEGRAM</a>
+<a href="https://t.me/Informatic_in_Termux">Unete a nuestra gran comunidad en Telegra.</a>
 
 
 ###### By: Scorpio28
