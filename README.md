@@ -23,7 +23,7 @@ chmod 777 metasploit.sh
 ```
 
 
-<a href="https://t.me/Informatic_in_Termux">Unete a nuestra gran comunidad en Telegram.</a>
+<a href="https://t.me/Informatic_in_Termux">Comunidad en Telegram.</a>
 
 
 ###### By: Scorpio28
