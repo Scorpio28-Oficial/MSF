@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Created by: Scorpio28
+# Created by: Scorpio2
 #
 # MSF
 #
