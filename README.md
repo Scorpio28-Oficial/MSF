@@ -27,7 +27,7 @@ chmod 777 metasploit.sh
 <a href="https://t.me/Informatic_in_Termux">Join Our Great Community On Telegram</a>
 
 
-###### By: Scorpio28
+###### Creator: Scorpio28
 
 <p align="center">
 	<img src="https://i.imgur.com/R27srL5.jpeg" width="600px" hight="100px">
