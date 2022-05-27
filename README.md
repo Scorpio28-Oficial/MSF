@@ -2,7 +2,7 @@
 <p align="center">
 	<img src="https://i.imgur.com/AjYrodX.jpeg" width="600px" hight="100px">
 </p>
-[+] Es un proyecto de código abierto para la seguridad informática, que proporciona información acerca de vulnerabilidades de un sistema y ayuda en tests de penetración "Pentesting" y el desarrollo de firmas para sistemas de detección de intrusos.
+[+] It is an open source project for computer security, which provides information about vulnerabilities of a system and helps in penetration tests "Pentesting" and the development of signatures for intrusion detection systems.
 
 ### INSTALLATION
 
