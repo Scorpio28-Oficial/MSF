@@ -87,7 +87,7 @@ echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
 sleep 0.1
 echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"
 sleep 0.1
-echo -e "${verde}MMMMMM${rojo} [${blanco} Informatic in Termux${rojo} ]${verde} MMMMM"
+echo -e "${verde}MMMMMM${rojo} [${blanco} Metasploit-Framework${rojo} ]${verde} MMMMM"
 sleep 0.1
 echo -e "${rojo}☆${blanco} https://t.me/Informatic_in_Termux ${rojo}☆"${blanco}
 echo -e ""
