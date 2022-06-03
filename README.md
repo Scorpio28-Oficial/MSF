@@ -19,7 +19,7 @@ cd MSF
 
 chmod 777 metasploit.sh
 
-./metasploit.sh
+bash metasploit.sh
 ```
 
 
