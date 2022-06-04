@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -46,7 +46,7 @@ sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
 sleep 0.5
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
+echo -e ""
 sleep 1
 echo -e ""
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
