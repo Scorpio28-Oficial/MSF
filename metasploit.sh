@@ -41,11 +41,9 @@ pkg install wget curl openssh openssl git -y
 apt install ncurses-utils
 pkg install wget
 echo -e ""
-echo -e ""
 sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
 sleep 0.5
-echo -e ""
 echo -e ""
 sleep 1
 echo -e ""
