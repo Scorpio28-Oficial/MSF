@@ -25,6 +25,7 @@ ${rojo}        |  \/  / ___|${verde}|  ___|
 ${rojo}        | |\/| \___ ${verde}\| |_
 ${rojo}        | |  | |___) ${verde}|  _|
 ${rojo}        |_|  |_|____/${verde}|_|
+
 ${bicolor}.:.:. Metasploit-framework .:.:.${cierre}"
 sleep 0.5
 echo -e ""
