@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -19,17 +19,16 @@ sleep 0.1
 sleep 1
 echo -e ""
 sleep 0.1
-echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
+echo -e "
+echo -e "${rojo}__  __ ____  ${verde}_____"
 sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"${blanco}
+echo -e "${rojo}|  \/  / ___|${verde}|  ___|"
 sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"${blanco}
+echo -e "${rojo}| |\/| \___ \${verde}| |_"
 sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"${blanco}
+echo -e "${rojo}| |  | |___) ${verde}|  _|"
 sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"${blanco}
-sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e "${rojo}|_|  |_|____/|_${verde}|"${blanco}
 sleep 0.5
 echo -e ""
 echo -e ""
