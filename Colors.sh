@@ -11,4 +11,5 @@ export cyan='\033[1;36m'
 export magenta='\033[1;35m'
 export negro='\033[0;30m'
 export gris_oscuro='\033[1;30'
+export comb='\033[1;37;41m'
 
