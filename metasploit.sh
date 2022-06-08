@@ -28,7 +28,7 @@ echo -e "${rojo}        | |\/| \___ \${verde}| |_"
 sleep 0.1
 echo -e "${rojo}        | |  | |___) ${verde}|  _|"
 sleep 0.1
-echo -e "${rojo}        |_|  |_|____/|_${verde}|
+echo -e "${rojo}        |_|  |_|____/|_${verde}|"
 sleep 0 1
 echo -e "${bicolor}.:.:. Metasploit-framework .:.:."${blanco}
 sleep 0.5
