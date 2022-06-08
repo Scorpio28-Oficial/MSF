@@ -12,4 +12,5 @@ export magenta='\033[1;35m'
 export negro='\033[0;30m'
 export gris_oscuro='\033[1;30'
 export bicolor='\033[1;37;41m'
+export cierre='\033[0m'
 
