@@ -20,17 +20,12 @@ sleep 1
 echo -e ""
 sleep 0.1
 echo -e "
-echo -e "${rojo}        __  __ ____  ${verde}_____"
-sleep 0.1
-echo -e "${rojo}        |  \/  / ___|${verde}|  ___|"
-sleep 0.1
-echo -e "${rojo}        | |\/| \___ \${verde}| |_"
-sleep 0.1
-echo -e "${rojo}        | |  | |___) ${verde}|  _|"
-sleep 0.1
-echo -e "${rojo}        |_|  |_|____/|_${verde}|"
-sleep 0 1
-echo -e "${bicolor}.:.:. Metasploit-framework .:.:."${blanco}
+${rojo}        __  __ ____  ${verde}_____
+${rojo}        |  \/  / ___|${verde}|  ___|
+${rojo}        | |\/| \___ \${verde}| |_
+${rojo}        | |  | |___) ${verde}|  _|
+${rojo}        |_|  |_|____/|_${verde}|
+${bicolor}.:.:. Metasploit-framework .:.:."${blanco}
 sleep 0.5
 echo -e ""
 echo -e ""
