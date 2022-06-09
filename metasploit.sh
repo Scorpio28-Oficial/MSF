@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -17,22 +17,17 @@ sleep 0.1
 #
 # CÓDIGO
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} metasploit-framework"
-cd $HOME
-rm -rf metasploit-framework 2>.log.txt
-mkdir metasploit-framework 2>.log.txt
-#rm log.txt
 echo -e ""
 sleep 0.1
-echo -e "${verde}███╗   ███╗███████╗███████╗"
+echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
 sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"
+echo -e "${verde}████╗ ████║██╔════╝██╔════╝"${blanco}
 sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"
+echo -e "${verde}██╔████╔██║███████╗█████╗"${blanco}
 sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"
+echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"${blanco}
 sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"
+echo -e "${verde}██║ ╚═╝ ██║███████║██║"${blanco}
 sleep 0.1
 echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 sleep 0.5
@@ -46,10 +41,12 @@ pkg install wget curl openssh openssl git -y
 apt install ncurses-utils
 pkg install wget
 echo -e ""
+echo -e ""
 sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
 sleep 0.5
 echo -e ""
+#!/data/data/com.termux/files/usr/bin/bash
 sleep 1
 echo -e ""
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
@@ -88,9 +85,7 @@ echo -e "${verde}MMMMMMMMMMNm,            eMMMMMNMMNMM"
 sleep 0.1
 echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
 sleep 0.1
-echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"
-sleep 0.1
-echo -e "${verde}MMMMMM${rojo} [${blanco} Metasploit-Framework${rojo} ]${verde} MMMMM"
+echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 echo -e ""
 sleep 0.5
 echo -e ""
@@ -106,7 +101,6 @@ sleep 3
 
 echo -e ""
 sleep 3
-pkg update && apt upgrade -y
 apt update && apt upgrade -y
 echo -e ""
 echo -e "${rojo}[${verde}*${rojo}]${verde} Termux Updated...${blanco}"
@@ -123,6 +117,8 @@ ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
 IGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcclx0XHQkaSI7CiAg
 ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
+echo -e ""
+sleep 1
 echo -e ""
 echo -e "${rojo}[${verde}*${rojo}]${verde} Dependencies wget, curl, zip tar, etc...${blanco}"
 
@@ -143,7 +139,7 @@ source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ru
 
 echo -e ""
 echo -e ""
-echo -e "[${Yellow}+${clear}] Downloading the script..."
+echo -e "${rojo}[${verde}*${rojo}]${verde} Downloading The Script...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
@@ -197,15 +193,16 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo -e ""
+
 sleep 3
 echo -e ""
 echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please Press The Letter 'y' Of Enter To Finish The Installation [n/y]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Metasploit V6.2.2 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Cheers! Metasploit V6.2.2 Has Been Installed...${blanco}"
 sleep 2
-echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} See You Again...${blanco}"
 else
 echo -e "${rojo}[${verde}*${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
 sleep 1
@@ -214,10 +211,9 @@ echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
 echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
   sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
-echo -e "${rojo}[${verde}√${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
-else
-echo -e "$replyme"
-echo -e "${rojo}[${verde}√${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
+
+echo -e ""
+echo -e "${rojo}[${verde}*${rojo}]${verde} ------------Ttry msfconsole...${blanco}"
 fi
 
 cd $HOME/metasploit-framework
@@ -226,3 +222,6 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
+echo -e ""
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
+echo -e "${rojo}[${verde}√]${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
