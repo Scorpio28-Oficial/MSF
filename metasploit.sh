@@ -17,7 +17,7 @@ sleep 0.1
 #
 # CÓDIGO
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} metasploit-framework."
+echo -e "${rojo}[${verde}*${rojo}]${verde} metasploit-framework"
 cd $HOME
 rm -rf metasploit-framework 2>.log.txt
 mkdir metasploit-framework 2>.log.txt
