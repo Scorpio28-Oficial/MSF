@@ -202,7 +202,7 @@ if [[ $replyme == 'y' ]];then
 echo -e ""
 echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.6 Has Been Installed...${blanco}"
 sleep 2
-echo -e "${rojo}[${verde}*${rojo}]${verde} See You Again...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
 echo -e "${rojo}[${verde}*${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
 sleep 1
