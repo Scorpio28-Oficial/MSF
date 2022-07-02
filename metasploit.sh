@@ -7,7 +7,7 @@
 # VARIABLES
 #
 PWD=$(pwd)
-source ${PWD}/Colors.shk
+source ${PWD}/Colors.sh
 #
 # FUNCIONES
 #
