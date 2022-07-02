@@ -183,7 +183,7 @@ ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Suppressing Warning${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Suppressing Warning${blanco}"
 
 sed -i '355 s/::Exception, //' msfvenom
 sed -i '481, 483 {s/^/#/}' msfvenom
@@ -196,11 +196,11 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${verde}*${rojo}]${verde} Please Press The Letter 'y' Of Enter To Finish The Installation [n/y]: ${blanco}"
+echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of Enter To Finish The Installation [n/y]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√]${rojo}]${verde} Cheers! Metasploit V6.2.6 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.6 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}*${rojo}]${verde} See You Again...${blanco}"
 else
@@ -223,5 +223,5 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}√]${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
-echo -e "${rojo}[${verde}√]${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
