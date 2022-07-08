@@ -200,7 +200,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.6 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.7 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
