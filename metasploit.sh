@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing the Most Current Version of Metasploit-framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} installing Metasploit-framework version 6.2.7...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
