@@ -102,7 +102,7 @@ echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Estimated installation time 10 minutesd...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Estimated installation time approximately 10 minutes...${blanco}"
 echo -e "${rojo}[${verde}*${rojo}]${verde} Please be patient...${blanco}"
 sleep 3
 echo -e ""
