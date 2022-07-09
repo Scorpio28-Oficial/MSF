@@ -48,43 +48,43 @@ sleep 0.5
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+echo -e "${rojo}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
 sleep 0.1
-echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
+echo -e "${rojo}MMMMMMMMMMM                MMMMMMMMMM"
 sleep 0.1
-echo -e "${verde}MMMNb                           vMMMM"
+echo -e "${rojo}MMMNb                           vMMMM"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM"
+echo -e "${rojo}MMMNl  ${blanco}MMMMM             MMMMM  ${rojo}JMMMM"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM"
+echo -e "${rojo}MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${rojo}JMMMM"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM"
+echo -e "${rojo}MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${rojo}JMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+echo -e "${rojo}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${rojo}jMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+echo -e "${rojo}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${rojo}jMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${rojo}jMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${rojo}jMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${rojo}jMMMM"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM"
+echo -e "${rojo}MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${rojo}JMMMM"
 sleep 0.1
-echo -e "${verde}MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM"
+echo -e "${rojo}MMMMR  ${blanco}?MMNM             MMMMM ${rojo}.dMMMM"
 sleep 0.1
-echo -e "${verde}MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM"
+echo -e "${rojo}MMMMNm  ${blanco}?MMM             MMMM  ${rojo}dMMMMM"
 sleep 0.1
-echo -e "${verde}MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN"
+echo -e "${rojo}MMMMMMN  ${blanco}?MM             MM?  ${rojo}NMMMMMN"
 sleep 0.1
-echo -e "${verde}MMMMMMMMNe                 JMMMMMNMMM"
+echo -e "${rojo}MMMMMMMMNe                 JMMMMMNMMM"
 sleep 0.1
-echo -e "${verde}MMMMMMMMMMNm,            eMMMMMNMMNMM"
+echo -e "${rojo}MMMMMMMMMMNm,            eMMMMMNMMNMM"
 sleep 0.1
-echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
+echo -e "${rojo}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
 sleep 0.1
-echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
+echo -e "${rojo}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
 echo -e ""
 sleep 0.5
 echo -e ""
