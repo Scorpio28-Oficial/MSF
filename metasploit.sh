@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Installing the Most Current Version of Metasploit-framework...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -93,7 +93,7 @@ echo -e "${rojo}[${verde}*${rojo}]${verde} Starting Installation...${blanco}"
 echo -e ""
 echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Updating...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Preparing the installation...${blanco}"
 sleep 3
 echo -e "${rojo}[${verde}*${rojo}]${verde} Do Not Cancel The Installation...${blanco}"
 sleep 3
