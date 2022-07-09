@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -46,7 +46,6 @@ sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
 sleep 0.5
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
 sleep 1
 echo -e ""
 echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
@@ -94,7 +93,7 @@ echo -e "${rojo}[${verde}*${rojo}]${verde} Starting Installation...${blanco}"
 echo -e ""
 echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Updating Termux...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Updating...${blanco}"
 sleep 3
 echo -e "${rojo}[${verde}*${rojo}]${verde} Do Not Cancel The Installation...${blanco}"
 sleep 3
@@ -103,8 +102,8 @@ echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Termux Updated...${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Estimated installation time 10 minutesd...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Please be patient...${blanco}"
 sleep 3
 echo -e ""
 
@@ -200,20 +199,17 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.7 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit v6.2.7 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
 echo -e "${rojo}[${verde}*${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
 sleep 1
 echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
-  sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
-  sleep 3
+sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} ------------Ttry msfconsole...${blanco}"
 fi
 
 cd $HOME/metasploit-framework
@@ -225,3 +221,4 @@ sleep 0.5
 echo -e ""
 echo -e "${rojo}[${verde}√${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
 echo -e "${rojo}[${verde}√${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
+echo -e ""
