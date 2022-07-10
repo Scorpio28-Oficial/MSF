@@ -48,43 +48,46 @@ sleep 0.5
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${rojo}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+echo -e "${rojo}      .:okOOOkdc'           'cdkOOOko:."
 sleep 0.1
-echo -e "${rojo}MMMMMMMMMMM                MMMMMMMMMM"
+echo -e "${rojo}    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."
 sleep 0.1
-echo -e "${rojo}MMMNb                           vMMMM"
+echo -e "${rojo}   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"
 sleep 0.1
-echo -e "${rojo}MMMNl  ${blanco}MMMMM             MMMMM  ${rojo}JMMMM"
+echo -e "${rojo}  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"
 sleep 0.1
-echo -e "${rojo}MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${rojo}JMMMM"
+echo -e "${rojo}  oOOOOOOOO.${blanco}MMMM${rojo}.oOOOOoOOOOl.${blanco}MMMM${rojo},OOOOOOOOo"
 sleep 0.1
-echo -e "${rojo}MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${rojo}JMMMM"
+echo -e "${rojo}  dOOOOOOOO.${blanco}MMMMMM${rojo}.cOOOOOc.${blanco}MMMMMM${rojo},OOOOOOOOx"
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${rojo}jMMMM"
+echo -e "${rojo}  lOOOOOOOO.${blanco}MMMMMMMMM;${rojo}d;${blanco}MMMMMMMMM${rojo},OOOOOOOOl"
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${rojo}jMMMM"
+echo -e "${rojo}  .OOOOOOOO.${blanco}MMM${rojo}.;${blanco}MMMMMMMMMMM${rojo};${blanco}MMMM${rojo},OOOOOOOO."
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${rojo}jMMMM"
+echo -e "${rojo}   cOOOOOOO.${blanco}MMM${rojo}.OOc.${blanco}MMMMM${♧rojo}'oOO.${blanco}MMM${rojo},OOOOOOOc"
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${rojo}jMMMM"
+echo -e "${rojo}    oOOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOOo"
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${rojo}jMMMM"
+echo -e "${rojo}     lOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOl"
 sleep 0.1
-echo -e "${rojo}MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${rojo}JMMMM"
+echo -e "${rojo}      ;OOOO'${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo};OOOO;"
 sleep 0.1
-echo -e "${rojo}MMMMR  ${blanco}?MMNM             MMMMM ${rojo}.dMMMM"
+echo -e "${rojo}       .dOOo'${blanco}WM${rojo}.OOOOocccxOOOO.MX'xOOd."
 sleep 0.1
-echo -e "${rojo}MMMMNm  ${blanco}?MMM             MMMM  ${rojo}dMMMMM"
+echo -e "${rojo}         ,kOl'${blanco}M${rojo}.OOOOOOOOOOOOO.]${blanco}M${rojo}'dOk,"
 sleep 0.1
-echo -e "${rojo}MMMMMMN  ${blanco}?MM             MM?  ${rojo}NMMMMMN"
+echo -e "${rojo}           :kk;.OOOOOOOOOOOO0.;Ok:"
 sleep 0.1
-echo -e "${rojo}MMMMMMMMNe                 JMMMMMNMMM"
 sleep 0.1
-echo -e "${rojo}MMMMMMMMMMNm,            eMMMMMNMMNMM"
+echo -e "${rojo}             ;kOOOOOOOOOOOOOOOk:"
 sleep 0.1
-echo -e "${rojo}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
+echo -e "${rojo}               ,xOOOOOOOOOOOx,"
 sleep 0.1
-echo -e "${rojo}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
+echo -e "${rojo}                 .lOOOOOOOl."
+sleep 0.1
+echo -e "${rojo}                    ,dOd,"
+sleep 0.1
+echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
