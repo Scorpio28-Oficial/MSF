@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.7 of Metasploit-framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.8 of Metasploit-framework...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -201,7 +201,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit v6.2.7 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit v6.2.8 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
