@@ -2,6 +2,9 @@
 <p align="center">
 	<img src="https://i.imgur.com/AjYrodX.jpeg" width="600px" hight="100px">
 </p>
+<p align="center">
+	<img src="https://i.imgur.com/M9zbdmH.png" width="600px" hight="100px">
+</p>
 [+] It is an open source project for computer security, which provides information about vulnerabilities of a system and helps in penetration tests "Pentesting" and the development of signatures for intrusion detection systems.
 
 ### INSTALLATION
@@ -28,7 +31,3 @@ bash metasploit.sh
 
 
 ###### Creator: Scorpio28
-
-<p align="center">
-	<img src="https://i.imgur.com/VL5Kp6B.png" width="600px" hight="100px">
-</p>
