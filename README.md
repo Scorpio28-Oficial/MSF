@@ -1,6 +1,6 @@
 # MSF 2022
 <p align="center">
-	<img src="https://i.imgur.com/teeSg2j.jpeg" width="600px" hight="100px">
+	<img src="https://i.imgur.com/ajmYnq9.jpeg" width="600px" hight="100px">
 </p>
 <p align="center">
 	<img src="https://i.imgur.com/M9zbdmH.png" width="600px" hight="100px">
