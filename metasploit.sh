@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.11 of Metasploit-framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.12 of Metasploit-framework...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -180,8 +180,6 @@ fi
 if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
 fi
-ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
-termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
 echo -e "${rojo}[${verde}√${rojo}]${verde} Suppressing Warning${blanco}"
@@ -201,7 +199,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit v6.2.11 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit v6.2.12 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
