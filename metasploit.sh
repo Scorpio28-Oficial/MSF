@@ -180,6 +180,8 @@ fi
 if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
 fi
+ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
+termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
 echo -e "${rojo}[${verde}√${rojo}]${verde} Suppressing Warning${blanco}"
