@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -34,7 +34,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Required Packages...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING REQUIRED PACKAGES...${blanco}"
 sleep 0.5
 apt update && apt upgrade -y
 pkg install wget curl openssh openssl git -y
@@ -43,10 +43,9 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.12 of Metasploit-framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING VERSION 6.2.12 of METASPLOIT-FRAMEWORD...${blanco}"
 sleep 0.5
 echo -e ""
-#!/data/data/com.termux/files/usr/bin/bash
 sleep 1
 echo -e ""
 echo -e "${rojo}      .:okOOOkdc'           'cdkOOOko:."
@@ -91,27 +90,27 @@ echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Starting Installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} STARTING INSTALLATION...${blanco}"
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} PLEASE WAIT...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Preparing the installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} PREPARING THE INSTALLATION...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Do Not Cancel The Installation...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} DO NOT CANCEL THE INSTALLATION...${blanco}"
 sleep 3
 echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Termux Updated...${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} THIS WILL TAKE A FEW MINUTES...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} PLEASE WAIT...${blanco}"
 sleep 3
 echo -e ""
 
 #
 # Loading spinner
-echo -e -n "${rojo}[${verde}*${rojo}]${verde} Loading.....${verde}"
+echo -e -n "${rojo}[${verde}*${rojo}]${verde} LOADING.....${verde}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
@@ -121,7 +120,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Dependencies wget, curl, zip tar, etc...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} DEPENDENCIES wget, curl, zip tar, etc...${blanco}"
 
 
 # Purge installed ruby
@@ -135,17 +134,17 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Fix ruby BigDecimal...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} FIX RUBY BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Downloading The Script...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} DOWNLOADING THE SCRIPT...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installation Gems...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLATIONS GEMS...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -184,7 +183,7 @@ ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Suppressing Warning${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} SUPPRSSING WARNING${blanco}"
 
 sed -i '355 s/::Exception, //' msfvenom
 sed -i '481, 483 {s/^/#/}' msfvenom
@@ -197,24 +196,24 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of Enter To Finish The Installation [n/y]: ${blanco}"
+echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER 'y' OF ENTER TO FINISH THE INTALLATION [n/y]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.12 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} CHERS! METASPLOIT V6.2.12 HAS BEEN INSTALLED...${blanco}"
 sleep 2
-echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} SEE YOU AGAIN...${blanco}"
 else
-echo -e "${rojo}[${verde}*${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
+echo -e "${rojo}[${verde}*${rojo}]${verde} I'M SORRY YOU PRESSED NO...${blanco} "
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} FIxING....${blanco}"
   sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Fixing....${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} FIxING....${blanco}"
   sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} ------------Ttry msfconsole...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} ------------TTRY msfconsole...${blanco}"
 fi
 
 cd $HOME/metasploit-framework
@@ -224,5 +223,5 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Metasploit-Framework Installed.${blanco}"
-echo -e "${rojo}[${verde}√${rojo}]${verde} Open The Console with: ${blanco}msfconsole${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT-FRAMEWORK INSTALLED.${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} OPEN THE CONSOLE WITH: ${blanco}msfconsole${blanco}"
