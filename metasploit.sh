@@ -43,49 +43,51 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} Installing Metasploit-Framework...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} installing version 6.2.12 of Metasploit-framework...${blanco}"
 sleep 0.5
 echo -e ""
 #!/data/data/com.termux/files/usr/bin/bash
 sleep 1
 echo -e ""
-echo -e "${verde}MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+echo -e "${rojo}      .:okOOOkdc'           'cdkOOOko:."
 sleep 0.1
-echo -e "${verde}MMMMMMMMMMM                MMMMMMMMMM"
+echo -e "${rojo}    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."
 sleep 0.1
-echo -e "${verde}MMMNb                           vMMMM"
+echo -e "${rojo}   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMM             MMMMM  ${verde}JMMMM"
+echo -e "${rojo}  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMMMMN       NMMMMMMM  ${verde}JMMMM"
+echo -e "${rojo}  oOOOOOOOO.${blanco}MMMM${rojo}.oOOOOoOOOOl.${blanco}MMMM${rojo},OOOOOOOOo"
 sleep 0.1
-echo -e "${verde}MMMNl  ${blanco}MMMMMMMMMNmmmNMMMMMMMMM  ${verde}JMMMM"
+echo -e "${rojo}  dOOOOOOOO.${blanco}MMMMMM${rojo}.cOOOOOc.${blanco}MMMMMM${rojo},OOOOOOOOx"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+echo -e "${rojo}  lOOOOOOOO.${blanco}MMMMMMMMM${rojo};d;${blanco}MMMMMMMMM${rojo},OOOOOOOOl"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMMMMMMMMMMMMMMMMMMMM  ${verde}jMMMM"
+echo -e "${rojo}  .OOOOOOOO.${blanco}MMM${rojo}.;${blanco}MMMMMMMMMMM${rojo};${blanco}MMMM${rojo},OOOOOOOO."
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}   cOOOOOOO.${blanco}MMM${rojo}.OOc.${blanco}MMMMM${rojo}'oOO.${blanco}MMM${rojo},OOOOOOOc"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMMM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}    oOOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOOo"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}MMMNM   MMMMMMM   MMMMM  ${verde}jMMMM"
+echo -e "${rojo}     lOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOl"
 sleep 0.1
-echo -e "${verde}MMMNI  ${blanco}WMMMM   MMMMMMM   MMMM#  ${verde}JMMMM"
+echo -e "${rojo}      ;OOOO'${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo};OOOO;"
 sleep 0.1
-echo -e "${verde}MMMMR  ${blanco}?MMNM             MMMMM ${verde}.dMMMM"
+echo -e "${rojo}       .dOOo'${blanco}WM${rojo}.OOOOocccxOOOO.${blanco}MX${rojo}'xOOd."
 sleep 0.1
-echo -e "${verde}MMMMNm  ${blanco}?MMM             MMMM  ${verde}dMMMMM"
+echo -e "${rojo}         ,kOl'${blanco}M${rojo}.OOOOOOOOOOOOO.${blanco}M${rojo}'dOk,"
 sleep 0.1
-echo -e "${verde}MMMMMMN  ${blanco}?MM             MM?  ${verde}NMMMMMN"
+echo -e "${rojo}           :kk;.OOOOOOOOOOOOO.;Ok:"
 sleep 0.1
-echo -e "${verde}MMMMMMMMNe                 JMMMMMNMMM"
+echo -e "${rojo}             ;kOOOOOOOOOOOOOOOk:"
 sleep 0.1
-echo -e "${verde}MMMMMMMMMMNm,            eMMMMMNMMNMM"
+echo -e "${rojo}               ,xOOOOOOOOOOOx,"
 sleep 0.1
-echo -e "${verde}MMMMNNMNMMMMMNx        MMMMMMNMMNMMNM"
+echo -e "${rojo}                 .lOOOOOOOl."
 sleep 0.1
-echo -e "${verde}MMMMMMMMNMMNMMMMm+..+MMNMMNMNMMNMMNMM"${blanco}
+echo -e "${rojo}                    ,dOd,"
+sleep 0.1
+echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
@@ -94,11 +96,10 @@ echo -e "${rojo}[${verde}*${rojo}]${verde} Starting Installation...${blanco}"
 echo -e ""
 echo -e "${rojo}[${verde}*${rojo}]${verde} Please Wait...${blanco}"
 sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} Updating Termux...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} Preparing the installation...${blanco}"
 sleep 3
 echo -e "${rojo}[${verde}*${rojo}]${verde} Do Not Cancel The Installation...${blanco}"
 sleep 3
-
 echo -e ""
 sleep 3
 apt update && apt upgrade -y
@@ -200,7 +201,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} Please Press The Letter 'y' Of E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.6 Has Been Installed...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} Cheers! Metasploit V6.2.12 Has Been Installed...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} See You Again...${blanco}"
 else
