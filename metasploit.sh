@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING VERSION 6.2.12 of METASPLOIT-FRAMEWORD...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING VERSION 6.2.12 OF METASPLOIT-FRAMEWORD...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -90,21 +90,22 @@ echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} STARTING INSTALLATION...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} PREPARING THE INSTALLATION...${blanco}"
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} PLEASE WAIT...${blanco}"
-sleep 3
-echo -e "${rojo}[${verde}*${rojo}]${verde} PREPARING THE INSTALLATION...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} THIS WILL TAKE A FEW MINUTES...${blanco}"
 sleep 3
 echo -e "${rojo}[${verde}*${rojo}]${verde} DO NOT CANCEL THE INSTALLATION...${blanco}"
+sleep 3
+echo -e "${rojo}[${verde}*${rojo}]${verde} DO NOT EXIT THE TERMINAL DURING INSTALLATION...${blanco}"
 sleep 3
 echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} THIS WILL TAKE A FEW MINUTES...${blanco}"
-echo -e "${rojo}[${verde}*${rojo}]${verde} PLEASE WAIT...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} STARTING THE INSTALLATION...${blanco}"
+sleep 3
+echo -e "${rojo}[${verde}*${rojo}]${verde} PLEASE BE PATIENT...${blanco}"
 sleep 3
 echo -e ""
 
@@ -144,7 +145,7 @@ cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLATIONS GEMS...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING GEMS...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -200,7 +201,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER 'y' OF E
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} CHERS! METASPLOIT V6.2.12 HAS BEEN INSTALLED...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT VERSION 6.2.12 INSTALLED CORRECTLY...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} SEE YOU AGAIN...${blanco}"
 else
