@@ -197,7 +197,7 @@ echo -e ""
 
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER 'y' OF ENTER TO FINISH THE INTALLATION [n/y]: ${blanco}"
+echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER '${blanco}y${verde}' OF ENTER TO FINISH THE INTALLATION [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
