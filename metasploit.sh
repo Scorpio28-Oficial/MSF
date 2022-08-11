@@ -43,7 +43,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING VERSION 6.2.12 OF METASPLOIT-FRAMEWORD...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} INSTALLING VERSION 6.2.13 OF METASPLOIT-FRAMEWORD...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -201,7 +201,7 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER '${blanc
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT VERSION 6.2.12 INSTALLED CORRECTLY...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT VERSION 6.2.13 INSTALLED CORRECTLY...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} SEE YOU AGAIN...${blanco}"
 else
