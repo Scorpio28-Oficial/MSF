@@ -16,6 +16,7 @@ sleep 0.1
 }
 #
 # CÓDIGO
+clear
 sleep 1
 echo -e ""
 sleep 0.1
