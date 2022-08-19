@@ -215,13 +215,13 @@ echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER '${blanc
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT VERSION 6.2.14 INSTALLED CORRECTLY...${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} MSF VERSION 6.2.14 INSTALLED CORRECTLY...${blanco}"
 sleep 2
 echo -e "${rojo}[${verde}√${rojo}]${verde} SEE YOU AGAIN...${blanco}"
 else
 echo -e "${rojo}[${verde}*${rojo}]${verde} I'M SORRY YOU PRESSED NO...${blanco} "
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${verde} FIxING....${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} FINALIZED....${blanco}"
   sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
