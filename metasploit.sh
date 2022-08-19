@@ -136,7 +136,7 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${verde} FIX RUBY BigDecimal...${blanco}"
+echo -e "${rojo}[${verde}*${rojo}]${verde} FIX RUBY BIGDECIMAL...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
@@ -194,7 +194,21 @@ sed -i '86 {s/^/#/};96 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo -e ""
-
+clear
+echo -e ""
+sleep 0.1
+echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
+sleep 0.1
+echo -e "${verde}████╗ ████║██╔════╝██╔════╝"${blanco}
+sleep 0.1
+echo -e "${verde}██╔████╔██║███████╗█████╗"${blanco}
+sleep 0.1
+echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"${blanco}
+sleep 0.1
+echo -e "${verde}██║ ╚═╝ ██║███████║██║"${blanco}
+sleep 0.1
+echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e ""
 sleep 3
 echo -e ""
 echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER '${blanco}y${verde}' OF ENTER TO FINISH THE INTALLATION [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
@@ -222,5 +236,5 @@ sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_r
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}√${rojo}]${verde} METASPLOIT-FRAMEWORK INSTALLED.${blanco}"
+echo -e "${rojo}[${verde}√${rojo}]${verde} MSF INSTALLED.${blanco}"
 echo -e "${rojo}[${verde}√${rojo}]${verde} OPEN THE CONSOLE WITH: ${blanco}msfconsole${blanco}"
