@@ -2,7 +2,9 @@
 #
 export rosa='\033[38;5;207m'
 export rojo='\033[1;31m'
+export red='\033[0;31m'
 export verde='\033[1;32m'
+export green='\033[0;32m'
 export amarillo='\033[33m'
 export azul='\033[34m'
 export morado='\033[35m'
