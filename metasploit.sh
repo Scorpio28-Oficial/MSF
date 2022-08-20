@@ -211,7 +211,8 @@ echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blan
 sleep 0.1
 echo -e ""
 sleep 0.1
-echo -e "${verde}INFORMATIC IN TERMUX / WHITE HACKS
+echo -e "${verde}-------C-O-M-M-U-N-I-T-I-E-S-------
+INFORMATIC IN TERMUX / WHITE HACKS
 ----------------[+]----------------"
 sleep 3
 echo -e ""
