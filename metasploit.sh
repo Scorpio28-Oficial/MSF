@@ -210,7 +210,7 @@ sleep 0.1
 echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
 echo -e ""
 echo -e "${green}INFORMATIC IN TERMUX / WHITE HACKS
-----------------${red}[${green}☆${red}]${green}----------------"
+----------------[${red}☆${green}]----------------"
 sleep 3
 echo -e ""
 echo -e -n "${rojo}[${verde}√${rojo}]${verde} PLEASE PRESS THE LETTER '${blanco}y${verde}' OF ENTER TO FINISH THE INTALLATION [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
