@@ -27,7 +27,7 @@ bash metasploit.sh
 
 
 
-<a href="https://t.me/Informatic_in_Termux">Community In Telegram</a></a>
+<a href="https://t.me/Informatic_in_Termux">Informatic in Termux</a>
 
 
 ###### Creator: Scorpio28
