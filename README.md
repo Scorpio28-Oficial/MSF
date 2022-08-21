@@ -26,10 +26,9 @@ bash metasploit.sh
 ```
 
 
-<ul>
+
 <li>
 <a href="https://t.me/Informatic_in_Termux">Informatic in Termux</a>
 </li>
-</ul>
 
 ###### Creator: Scorpio28
