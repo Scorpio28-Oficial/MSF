@@ -104,9 +104,9 @@ echo -e ""
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} STARTING THE INSTALLATION...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} STARTING THE INSTALLATION...${blanco}"
 sleep 3
-echo -e "${rojo}[${blenco}*${rojo}]${verde} PLEASE BE PATIENT...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} PLEASE BE PATIENT...${blanco}"
 sleep 3
 echo -e ""
 
