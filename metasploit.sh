@@ -112,7 +112,7 @@ echo -e ""
 
 #
 # Loading spinner
-echo -e -n "${rojo}[${verde}*${rojo}]${verde} LOADING.....${verde}"
+echo -e -n "${rojo}[${amarillo}*${rojo}]${azul} LOADING.....${verde}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
