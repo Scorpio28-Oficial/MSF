@@ -35,7 +35,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${blenco}*${rojo}]${verde} INSTALLING REQUIRED PACKAGES...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} INSTALLING REQUIRED PACKAGES...${blanco}"
 sleep 0.5
 apt update && apt upgrade -y
 pkg install wget curl openssh openssl git -y
@@ -44,7 +44,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${blenco}*${rojo}]${verde} INSTALLING VERSION 6.2.15 OF METASPLOIT-FRAMEWORD...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} INSTALLING VERSION 6.2.15 OF METASPLOIT-FRAMEWORD...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -91,14 +91,14 @@ echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} PREPARING THE INSTALLATION...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} PREPARING THE INSTALLATION...${blanco}"
 
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} THIS WILL TAKE A FEW MINUTES...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} THIS WILL TAKE A FEW MINUTES...${blanco}"
 sleep 3
-echo -e "${rojo}[${blenco}*${rojo}]${verde} DO NOT CANCEL THE INSTALLATION...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} DO NOT CANCEL THE INSTALLATION...${blanco}"
 sleep 3
-echo -e "${rojo}[${blenco}*${rojo}]${verde} DO NOT EXIT THE TERMINAL DURING INSTALLATION...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} DO NOT EXIT THE TERMINAL DURING INSTALLATION...${blanco}"
 sleep 3
 echo -e ""
 sleep 3
@@ -112,7 +112,7 @@ echo -e ""
 
 #
 # Loading spinner
-echo -e -n "${rojo}[${blenco}*${rojo}]${verde} LOADING.....${verde}"
+echo -e -n "${rojo}[${blanco}*${rojo}]${verde} LOADING.....${verde}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
@@ -122,7 +122,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} DEPENDENCIES wget, curl, zip tar, etc...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} DEPENDENCIES wget, curl, zip tar, etc...${blanco}"
 
 
 # Purge installed ruby
@@ -136,17 +136,17 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} FIX RUBY BIGDECIMAL...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} FIX RUBY BIGDECIMAL...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} DOWNLOADING THE SCRIPT...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} DOWNLOADING THE SCRIPT...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} INSTALLING GEMS...${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} INSTALLING GEMS...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -185,7 +185,7 @@ ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
-echo -e "${rojo}[${blenco}*${rojo}]${verde} SUPPRSSING WARNING${blanco}"
+echo -e "${rojo}[${blanco}*${rojo}]${verde} SUPPRSSING WARNING${blanco}"
 
 sed -i '355 s/::Exception, //' msfvenom
 sed -i '481, 483 {s/^/#/}' msfvenom
@@ -216,7 +216,7 @@ INFORMATIC IN TERMUX / WHITE HACKS
 ----------------${rojo}[${blenco}+${rojo}]${verde}----------------"
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${blenco}*${rojo}]${verde} PLEASE PRESS THE LETTER '${blanco}y${verde}' OF ENTER TO FINISH THE INTALLATION [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
+echo -e -n "${rojo}[${blanco}*${rojo}]${verde} PLEASE PRESS THE LETTER '${blanco}y${verde}' OF ENTER TO FINISH THE INTALLATION [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
