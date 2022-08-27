@@ -216,7 +216,7 @@ INFORMATIC IN TERMUX / WHITE HACKS
 ----------------[+]----------------"
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${amarillo}*${rojo}]${azul} Please Press The Letter '${blanco}y${verde}' Of Enter To Finish The Intallation [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
+echo -e -n "${rojo}[${amarillo}*${rojo}]${azul} Please Press The Letter '${blanco}y${azul}' Of Enter To Finish The Intallation [${blanco}n${azul}/${blanco}y${azul}]: ${blanco}"
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
