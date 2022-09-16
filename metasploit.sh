@@ -136,16 +136,19 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
+slepp 1
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Fix Ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
+slepp 1
 echo -e ""
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Downloading The Script...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
+sleep 1
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Gems...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
@@ -240,6 +243,7 @@ sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hr
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
+ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 sleep 0.5
 echo -e ""
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Installed.${blanco}"
