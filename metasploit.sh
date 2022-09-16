@@ -136,7 +136,8 @@ python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
 echo -e ""
-slepp 1
+sleep 1
+echo -e ""
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Fix Ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
