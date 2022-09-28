@@ -44,7 +44,7 @@ pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Version 6.2.19 Of Metasploit-Frameword...${blanco}"
+echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Version 6.2.20 Of Metasploit-Frameword...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -225,7 +225,7 @@ echo -e -n "${rojo}[${amarillo}*${rojo}]${verde} Please Press The Letter '${blan
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.2.19 Installed Correctly...${blanco}"
+echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.2.20 Installed Correctly...${blanco}"
 
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} See You Again...${blanco}"
   sleep 3
