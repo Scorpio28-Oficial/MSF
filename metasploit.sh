@@ -101,6 +101,10 @@ sleep 3
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Do Not Exit The Terminal During Installation...${blanco}"
 sleep 3
 echo -e ""
+cd $HOME
+rm -rf metasploit-framework 2>.log.txt
+mkdir metasploit-framework 2>.log.txt
+#rm log.txt
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
@@ -135,21 +139,17 @@ pkg install -y python autoconf bison clang coreutils curl findutils apr apr-util
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
 
-echo -e ""
-sleep 1
-echo -e ""
+echo
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Fix Ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
-echo -e ""
-slepp 1
-echo -e ""
+echo
+echo
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Downloading The Script...${blanco}"
 cd $HOME
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
-echo -e ""
-sleep 1
+echo
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Gems...${blanco}"
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
@@ -188,7 +188,7 @@ fi
 ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
 termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
-echo -e ""
+echo
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Supprssing Warning${blanco}"
 
 sed -i '355 s/::Exception, //' msfvenom
@@ -226,25 +226,19 @@ read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.2.19 Installed Correctly...${blanco}"
-sleep 2
+
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} See You Again...${blanco}"
-else
+  sleep 3
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
-sleep 1
+  sleep 3
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} Finalized....${blanco}"
-sleep 3
+  sleep 3
 sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
-
-echo -e ""
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} Incorrect Option But Installation Has Been Successful${blanco}"
-fi
-
-cd $HOME/metasploit-framework
-sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
+echo -e "[${Yellow}+${clear}] Cheers! Metasploit6 has been installed..."
+else
+echo -e "$replyme"
 sleep 0.5
 echo -e ""
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Installed.${blanco}"
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} Open The Console With: ${blanco}msfconsole${blanco}"
+fi
