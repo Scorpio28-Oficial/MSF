@@ -151,42 +151,43 @@ git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 echo -e ""
 sleep 1
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Gems...${blanco}"
-cd $HOME/metasploit-framework
-sed '/rbnacl/d' -i Gemfile.lock
-sed '/rbnacl/d' -i metasploit-framework.gemspec
+cd $PREFIX/opt/metasploit-framework
+# sed '/rbnacl/d' -i Gemfile.lock
+# sed '/rbnacl/d' -i metasploit-framework.gemspec
 
-# version 0.118
-# root cause for this problem is missing net-smtp & mini_portile2 version
-
-# edit: they added net-smtp in gemspec
-
-# Warnings were fixed 
-
-# looks like someone added this in gemspec 
-# hereafter no need to add thus dependency :D
-#export MSF_FIX="spec.add_runtime_dependency 'net-smtp'"
-#sed -i "146i \  $MSF_FIX" metasploit-framework.gemspec
-sed -i "277,\$ s/2.8.0/2.2.0/" Gemfile.lock
+#sed -i "277,\$ s/2.8.0/2.2.0/" Gemfile.lock
 
 gem install bundler
-sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
+declare NOKOGIRI_VERSION=$(cat Gemfile.lock | grep -i nokogiri | sed 's/nokogiri [\(\)]/(/g' | cut -d ' ' -f 5 | grep -oP "(.).[[:digit:]][\w+]?[.].")
+#sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
 
-gem install nokogiri -v 1.8.0 -- --use-system-libraries
+gem install nokogiri -v $NOKOGIRI_VERSION -- --use-system-libraries
+
+# for aarch64 if nokogiri problem persist do this 
+
+bundle config build.nokogiri "--use-system-libraries --with-xml2-include=$PREFIX/include/libxml2"; bundle install
 
 gem install actionpack
 bundle update activesupport
 bundle update --bundler
 bundle install -j$(nproc --all)
-$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
-rm ./modules/auxiliary/gather/http_pdf_authors.rb
+
+#$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
+# rm ./modules/auxiliary/gather/http_pdf_authors.rb
 if [ -e $PREFIX/bin/msfconsole ];then
 	rm $PREFIX/bin/msfconsole
 fi
 if [ -e $PREFIX/bin/msfvenom ];then
 	rm $PREFIX/bin/msfvenom
 fi
-ln -s $HOME/metasploit-framework/msfconsole /data/data/com.termux/files/usr/bin/
-termux-elf-cleaner /data/data/com.termux/files/usr/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
+if [ -e $PREFIX/bin/msfrpcd ];then
+	rm $PREFIX/bin/msfrpcd
+fi
+ln -s $PREFIX/opt/metasploit-framework/msfconsole $PREFIX/bin/
+ln -s $PREFIX/opt/metasploit-framework/msfvenom $PREFIX/bin/
+ln -s $PREFIX/opt/metasploit-framework/msfrpcd $PREFIX/bin/
+
+termux-elf-cleaner $PREFIX/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 
 echo -e ""
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Supprssing Warning${blanco}"
@@ -199,7 +200,7 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' /data/data/com.termux/files/usr/lib
 ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
 echo -e ""
-clear
+sleep 3
 echo -e ""
 sleep 0.1
 echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
