@@ -45,7 +45,7 @@ yes|pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Version 6.2.20 Of Metasploit-Frameword...${blanco}"
+echo -e "${rojo}[${amarillo}*${rojo}]${verde} Installing Version 6.2.22 Of Metasploit-Frameword...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -266,7 +266,7 @@ echo -e -n "${rojo}[${amarillo}*${rojo}]${verde} Please Press The Letter '${blan
 read replyme
 if [[ $replyme == 'y' ]];then
 echo -e ""
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.2.20 Installed Correctly...${blanco}"
+echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.2.22 Installed Correctly...${blanco}"
 sleep 2
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} See You Again...${blanco}"
 else
@@ -280,7 +280,6 @@ echo -e ""
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} Incorrect Option But Installation Has Been Successful${blanco}"
 fi
 
-cd $HOME/metasploit-framework
 sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
 sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
