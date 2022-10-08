@@ -109,7 +109,6 @@ echo -e "${rojo}[${amarillo}*${rojo}]${verde} Starting The Installation...${blan
 sleep 3
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Please Be Patient...${blanco}"
 sleep 3
-echo -e ""
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
@@ -125,6 +124,7 @@ ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
 IGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcclx0XHQkaSI7CiAg
 ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
+echo -e ""
 echo -e ""
 echo -e "${rojo}[${amarillo}*${rojo}]${verde} Dependencies wget, curl, zip tar, etc...${blanco}"
 
