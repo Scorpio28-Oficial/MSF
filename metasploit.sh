@@ -42,7 +42,8 @@ echo -e ""
 echo -e ""
 sleep 1
 yes|apt update && apt upgrade
-yes|pkg install wget curl
+yes|pkg install curl
+yes|pkg install wget
 yes|pkg uninstall ruby
 echo -e ""
 echo -e ""
