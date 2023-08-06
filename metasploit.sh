@@ -49,7 +49,7 @@ yes|pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Installing Version 6.3.7 Of Metasploit-Frameword...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} Installing Version 6.3.28 Of Metasploit-Frameword...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -282,5 +282,5 @@ sleep 3
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${verde}[${blanco}*${verde}]${negro} MSF Installed.${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} MSF Installed v6.3.28-dev-8b8acad.${blanco}"
 echo -e "${verde}[${blanco}*${verde}]${negro} Open The Console With: ${blanco}msfconsole${blanco}"
