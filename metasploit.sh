@@ -240,7 +240,7 @@ sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/lo
 #sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 
 echo -e ""
-clear
+sleep 0.5
 echo -e ""
 sleep 0.1
 echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
@@ -262,28 +262,6 @@ INFORMATIC IN TERMUX / WHITE HACKS
 ----------------[+]----------------"
 sleep 3
 echo -e ""
-echo -e -n "${rojo}[${amarillo}*${rojo}]${verde} Please Press The Letter '${blanco}y${verde}' Of Enter To Finish The Intallation [${blanco}n${verde}/${blanco}y${verde}]: ${blanco}"
-read replyme
-if [[ $replyme == 'y' ]];then
-echo -e ""
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Version 6.3.7 Installed Correctly...${blanco}"
-sleep 2
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} See You Again...${blanco}"
-else
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} I'm Sorry You Pressed No...${blanco} "
-sleep 1
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} Finalized....${blanco}"
-sleep 3
-sed -i '13,14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '15 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb;sed -i '14 {s/^/#/}' /data/data/com.termux/files/usr/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
-
-echo -e ""
-echo -e "${rojo}[${amarillo}√${rojo}]${verde} Incorrect Option But Installation Has Been Successful${blanco}"
-fi
-
-sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
-sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 sleep 0.5
 echo -e ""
 echo -e "${rojo}[${amarillo}√${rojo}]${verde} MSF Installed.${blanco}"
