@@ -180,10 +180,6 @@ sleep 1
 echo -e "${verde}[${blanco}*${verde}]${negro} Fix Ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
-echo -e ""
-echo -e ""
-sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Installation...${blanco}"
 rm -rf $PREFIX/opt/metasploit-framework
 
 echo -e ""
