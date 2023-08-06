@@ -114,7 +114,6 @@ sleep 3
 echo -e "${verde}[${blanco}*${verde}]${negro} Please Be Patient...${blanco}"
 sleep 3
 
-
 center() {
   termwidth=$(stty size | cut -d" " -f2)
   padding="$(printf '%0.1s' ={1..500})"
@@ -122,12 +121,14 @@ center() {
 }
 
 # Loading spinner
+center " Loading..."
 echo -e -n "${verde}[${blanco}*${verde}]${negro} Loading.....${negroo}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
 IGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcclx0XHQkaSI7CiAg
 ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
+
 echo -e ""
 echo -e ""
 sleep 0.5
@@ -178,14 +179,15 @@ python3 -m pip install requests
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Dependencies wget, curl, zip tar, etc...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} Fix Ruby BigDecimal...${blanco}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Fix Ruby BigDecimal...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} Installation...${blanco}"
 rm -rf $PREFIX/opt/metasploit-framework
+
 echo -e ""
 echo -e ""
 sleep 1
@@ -196,7 +198,7 @@ git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Installing Gems...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} nstalling Gems...${blanco}"
 cd $PREFIX/opt/metasploit-framework
 # sed '/rbnacl/d' -i Gemfile.lock
 # sed '/rbnacl/d' -i metasploit-framework.gemspec
