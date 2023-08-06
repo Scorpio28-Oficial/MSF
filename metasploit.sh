@@ -42,10 +42,8 @@ echo -e ""
 echo -e ""
 sleep 1
 yes|apt update && apt upgrade
+yes|pkg install wget curl
 yes|pkg uninstall ruby
-yes|pkg install wget curl openssh openssl git
-apt install ncurses-utils
-yes|pkg install wget
 echo -e ""
 echo -e ""
 sleep 1
