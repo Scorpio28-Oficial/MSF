@@ -37,9 +37,6 @@ echo -e ""
 echo -e ""
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${negro} Installing Required Packages...${blanco}"
-sleep 0.5
-echo -e ""
-echo -e ""
 sleep 1
 yes|apt update && apt upgrade
 yes|pkg install curl
@@ -103,10 +100,8 @@ echo -e "${verde}[${blanco}*${verde}]${negro} Do Not Cancel The Installation...$
 sleep 3
 echo -e "${verde}[${blanco}*${verde}]${negro} Do Not Exit The Terminal During Installation...${blanco}"
 sleep 3
-echo -e ""
-sleep 3
-echo -e ""
 apt update && apt upgrade -y
+echo -e ""
 echo -e ""
 echo -e "${verde}[${blanco}*${verde}]${negro} Starting The Installation...${blanco}"
 sleep 3
@@ -124,8 +119,6 @@ echo -e ""
 echo -e ""
 sleep 0.5
 echo -e "${verde}[${blanco}*${verde}]${negro} Dependencies wget, curl, zip tar, etc...${blanco}"
-echo -e ""
-echo -e ""
 sleep 0.5
 
 ## Remove not working repositories
