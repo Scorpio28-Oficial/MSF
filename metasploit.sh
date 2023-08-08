@@ -115,8 +115,6 @@ ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
 IGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcclx0XHQkaSI7CiAg
 ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
-echo -e ""
-echo -e ""
 sleep 0.5
 echo -e "${verde}[${blanco}*${verde}]${negro} Dependencies wget, curl, zip tar, etc...${blanco}"
 sleep 0.5
@@ -260,9 +258,9 @@ sleep 0.1
 echo -e "${verde}-------C-O-M-M-U-N-I-T-I-E-S-------
 INFORMATIC IN TERMUX / WHITE HACKS
 ----------------[+]----------------"
+echo -e ""
+echo -e ""
 sleep 3
-echo -e ""
-sleep 0.5
-echo -e ""
 echo -e "${verde}[${blanco}*${verde}]${negro} MSF Installed v6.3.29-dev-8b8acad.${blanco}"
+sleep 1
 echo -e "${verde}[${blanco}*${verde}]${negro} Open The Console With: ${blanco}msfconsole${blanco}"
