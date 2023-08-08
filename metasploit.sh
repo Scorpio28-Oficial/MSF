@@ -45,7 +45,7 @@ yes|pkg uninstall ruby
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Installing Version 6.3.29 Of Metasploit-Frameword...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} Installing v6.3.29 Of Metasploit-Frameword...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
