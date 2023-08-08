@@ -98,7 +98,7 @@ echo -e "${verde}[${blanco}*${verde}]${negro} This Will Take A Few Minutes...${b
 sleep 3
 echo -e "${verde}[${blanco}*${verde}]${negro} Do Not Cancel The Installation...${blanco}"
 sleep 3
-echo -e "${verde}[${blanco}*${verde}]${negro} Do Not Exit The Terminal During Installation...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} This will take a few minutes...${blanco}"
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
