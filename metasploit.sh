@@ -45,7 +45,7 @@ yes|pkg uninstall ruby
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${negro} Installing v6.3.29 Of Metasploit-Frameword...${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} Installing Of Metasploit-Frameword...${blanco}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -262,6 +262,6 @@ INFORMATIC IN TERMUX / WHITE HACKS
 echo -e ""
 echo -e ""
 sleep 3
-echo -e "${verde}[${blanco}*${verde}]${negro} MSF Installed v6.3.29-dev-8b8acad.${blanco}"
+echo -e "${verde}[${blanco}*${verde}]${negro} MSF Installed v6.3.30-dev-8b8acad.${blanco}"
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${negro} Open The Console With: ${blanco}msfconsole${blanco}"
