@@ -262,6 +262,6 @@ INFORMATIC IN TERMUX / WHITE HACKS
 echo -e ""
 echo -e ""
 sleep 3
-echo -e "${verde}[${blanco}✓${verde}]${gris_oscuro} MSF Installed v6.3.30-dev-8b8acad.${blanco}"
+echo -e "${verde}[${blanco}√${verde}]${gris_oscuro} MSF Installed v6.3.30-dev-8b8acad.${blanco}"
 sleep 1
-echo -e "${verde}[${blanco}✓${verde}]${gris_oscuro} Open The Console With: ${blanco}msfconsole${blanco}"
+echo -e "${verde}[${blanco}√${verde}]${gris_oscuro} Open The Console With: ${blanco}msfconsole${blanco}"
