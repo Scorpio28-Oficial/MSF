@@ -108,7 +108,7 @@ sleep 3
 echo -e "${verde}[${blanco}*${verde}]${gris_oscuro} Please Be Patient...${blanco}"
 sleep 3
 # Loading spinner
-echo -e -n "${verde}[${blanco}*${verde}]${gris_oscuro} Loading.....${negroo}"
+echo -e -n "${verde}[${blanco}*${verde}]${gris_oscuro} Loading.....${negroo}" | lolcat
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
