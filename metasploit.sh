@@ -116,7 +116,7 @@ IGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcclx0XHQkaSI7CiAg
 ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
 sleep 0.5
-echo -e ""
+echo -e "${cierre}"
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Dependencies wget, curl, zip tar, etc...${cierre}"
 sleep 0.5
 
