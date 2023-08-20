@@ -96,18 +96,18 @@ echo -e ""
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Preparing The Installation...${cierre}" |pv -qL 45
 sleep 0.5
 echo -e "${azul}[${blanco}*${azul}]${bicolor} This Will Take A Few Minutes...${cierre}" |pv -qL 45
-sleep 3
+sleep 1
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Do Not Cancel The Installation...${cierre}" |pv -qL 45
-sleep 3
+sleep 1
 echo -e "${azul}[${blanco}*${azul}]${bicolor} This will take a few minutes...${cierre}" |pv -qL 45
-sleep 3
+sleep 1
 apt update && apt upgrade -y
 echo -e ""
 echo -e ""
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Starting The Installation...${cierre}" |pv -qL 45
-sleep 3
+sleep 1
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Please Be Patient...${cierre}" |pv -qL 45
-sleep 3
+sleep 1
 # Loading spinner
 echo -e -n "${azul}[${blanco}*${azul}]${bicolor} Loading.....${bicolor}" |pv -qL 45
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
@@ -265,7 +265,7 @@ echo -e "${azul}----------------[+]----------------"
 sleep 0.1
 echo -e ""
 echo -e ""
-sleep 3
+sleep 1
 echo -e "${azul}[${blanco}√${azul}]${bicolor} MSF Installed v6.3.31-dev-8b8acad.${cierre}" |pv -qL 45
 sleep 1
 echo -e "${azul}[${blanco}√${azul}]${bicolor} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
