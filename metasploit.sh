@@ -50,45 +50,45 @@ sleep 0.5
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${rojo}      .:okOOOkdc'           'cdkOOOko:."
+echo -e "${azul}      .:okOOOkdc'           'cdkOOOko:."
 sleep 0.1
-echo -e "${rojo}    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."
+echo -e "${azul}    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."
 sleep 0.1
-echo -e "${rojo}   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"
+echo -e "${azul}   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"
 sleep 0.1
-echo -e "${rojo}  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"
+echo -e "${azul}  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"
 sleep 0.1
-echo -e "${rojo}  oOOOOOOOO.${blanco}MMMM${rojo}.oOOOOoOOOOl.${blanco}MMMM${rojo},OOOOOOOOo"
+echo -e "${azul}  oOOOOOOOO.${blanco}MMMM${azul}.oOOOOoOOOOl.${blanco}MMMM${azul},OOOOOOOOo"
 sleep 0.1
-echo -e "${rojo}  dOOOOOOOO.${blanco}MMMMMM${rojo}.cOOOOOc.${blanco}MMMMMM${rojo},OOOOOOOOx"
+echo -e "${azul}  dOOOOOOOO.${blanco}MMMMMM${azul}.cOOOOOc.${blanco}MMMMMM${azul},OOOOOOOOx"
 sleep 0.1
-echo -e "${rojo}  lOOOOOOOO.${blanco}MMMMMMMMM${rojo};d;${blanco}MMMMMMMMM${rojo},OOOOOOOOl"
+echo -e "${azul}  lOOOOOOOO.${blanco}MMMMMMMMM${azul};d;${blanco}MMMMMMMMM${azul},OOOOOOOOl"
 sleep 0.1
-echo -e "${rojo}  .OOOOOOOO.${blanco}MMM${rojo}.;${blanco}MMMMMMMMMMM${rojo};${blanco}MMMM${rojo},OOOOOOOO."
+echo -e "${azul}  .OOOOOOOO.${blanco}MMM${azul}.;${blanco}MMMMMMMMMMM${azul};${blanco}MMMM${azul},OOOOOOOO."
 sleep 0.1
-echo -e "${rojo}   cOOOOOOO.${blanco}MMM${rojo}.OOc.${blanco}MMMMM${rojo}'oOO.${blanco}MMM${rojo},OOOOOOOc"
+echo -e "${azul}   cOOOOOOO.${blanco}MMM${azul}.OOc.${blanco}MMMMM${azul}'oOO.${blanco}MMM${azul},OOOOOOOc"
 sleep 0.1
-echo -e "${rojo}    oOOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOOo"
+echo -e "${azul}    oOOOOOO.${blanco}MMM${azul}.OOOO.${blanco}MMM${azul}:OOOO.${blanco}MMM${azul},OOOOOOo"
 sleep 0.1
-echo -e "${rojo}     lOOOOO.${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo},OOOOOl"
+echo -e "${azul}     lOOOOO.${blanco}MMM${azul}.OOOO.${blanco}MMM${azul}:OOOO.${blanco}MMM${azul},OOOOOl"
 sleep 0.1
-echo -e "${rojo}      ;OOOO'${blanco}MMM${rojo}.OOOO.${blanco}MMM${rojo}:OOOO.${blanco}MMM${rojo};OOOO;"
+echo -e "${azul}      ;OOOO'${blanco}MMM${azul}.OOOO.${blanco}MMM${azul}:OOOO.${blanco}MMM${azul};OOOO;"
 sleep 0.1
-echo -e "${rojo}       .dOOo'${blanco}WM${rojo}.OOOOocccxOOOO.${blanco}MX${rojo}'xOOd."
+echo -e "${azul}       .dOOo'${blanco}WM${azul}.OOOOocccxOOOO.${blanco}MX${azul}'xOOd."
 sleep 0.1
-echo -e "${rojo}         ,kOl'${blanco}M${rojo}.OOOOOOOOOOOOO.${blanco}M${rojo}'dOk,"
+echo -e "${azul}         ,kOl'${blanco}M${azul}.OOOOOOOOOOOOO.${blanco}M${azul}'dOk,"
 sleep 0.1
-echo -e "${rojo}           :kk;.OOOOOOOOOOOOO.;Ok:"
+echo -e "${azul}           :kk;.OOOOOOOOOOOOO.;Ok:"
 sleep 0.1
-echo -e "${rojo}             ;kOOOOOOOOOOOOOOOk:"
+echo -e "${azul}             ;kOOOOOOOOOOOOOOOk:"
 sleep 0.1
-echo -e "${rojo}               ,xOOOOOOOOOOOx,"
+echo -e "${azul}               ,xOOOOOOOOOOOx,"
 sleep 0.1
-echo -e "${rojo}                 .lOOOOOOOl."
+echo -e "${azul}                 .lOOOOOOOl."
 sleep 0.1
-echo -e "${rojo}                    ,dOd,"
+echo -e "${azul}                    ,dOd,"
 sleep 0.1
-echo -e "${rojo}                      ."
+echo -e "${azul}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
