@@ -64,7 +64,7 @@ echo -e "${rojo}  dOOOOOOOO.${blanco}MMMMMM${rojo}.cOOOOOc.${blanco}MMMMMM${rojo
 sleep 0.1
 echo -e "${rojo}  lOOOOOOOO.${blanco}MMMMMMMMM${rojo};d;${blanco}MMMMMMMMM${rojo},OOOOOOOOl"
 sleep 0.1
-echo -e "${rojo}  .OOOOOOOO.${blanco}MMM${rojo}.;${blanco}MMMMMMMMMMM${verde};${blanco}MMMM${verde},OOOOOOOO."
+echo -e "${rojo}  .OOOOOOOO.${blanco}MMM${rojo}.;${blanco}MMMMMMMMMMM${rojo};${blanco}MMMM${rojo},OOOOOOOO."
 sleep 0.1
 echo -e "${rojo}   cOOOOOOO.${blanco}MMM${rojo}.OOc.${blanco}MMMMM${rojo}'oOO.${blanco}MMM${rojo},OOOOOOOc"
 sleep 0.1
@@ -108,7 +108,7 @@ sleep 3
 echo -e "${azul}[${blanco}*${azul}]${bicolor} Please Be Patient...${cierre}"
 sleep 3
 # Loading spinner
-echo -e -n "${azul}[${blanco}*${azul}]${cierre} Loading.....${bicolor}"
+echo -e -n "${azul}[${blanco}*${azul}]${bicolor} Loading.....${bicolor}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
