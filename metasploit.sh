@@ -36,7 +36,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Installing Required Packages...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Installing Required Packages...${cierre}"
 sleep 1
 yes|apt update && apt upgrade
 yes|pkg install curl
@@ -45,7 +45,7 @@ yes|pkg uninstall ruby
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Installing Of Metasploit-Frameword...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Installing Of Metasploit-Frameword...${cierre}"
 sleep 0.5
 echo -e ""
 sleep 1
@@ -92,23 +92,23 @@ echo -e "${rojo}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Preparing The Installation...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Preparing The Installation...${cierre}"
 sleep 0.5
-echo -e "${azul}[${blanco}*${azul}]${bicolor} This Will Take A Few Minutes...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} This Will Take A Few Minutes...${cierre}"
 sleep 3
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Do Not Cancel The Installation...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Do Not Cancel The Installation...${cierre}"
 sleep 3
-echo -e "${azul}[${blanco}*${azul}]${bicolor} This will take a few minutes...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} This will take a few minutes...${cierre}"
 sleep 3
 apt update && apt upgrade -y
 echo -e ""
 echo -e ""
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Starting The Installation...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Starting The Installation...${cierre}"
 sleep 3
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Please Be Patient...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Please Be Patient...${cierre}"
 sleep 3
 # Loading spinner
-echo -e -n "${azul}[${blanco}*${azul}]${bicolor} Loading.....${bicolor}"
+echo -e -n "${azul}[${blanco}*${azul}]${cierre} Loading.....${bicolor}"
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
@@ -117,7 +117,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
 sleep 0.5
 echo -e ""
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Dependencies wget, curl, zip tar, etc...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Dependencies wget, curl, zip tar, etc...${cierre}"
 sleep 0.5
 
 ## Remove not working repositories
@@ -162,7 +162,7 @@ python3 -m pip install requests
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Fix Ruby BigDecimal...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Fix Ruby BigDecimal...${cierre}"
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 rm -rf $PREFIX/opt/metasploit-framework
@@ -170,14 +170,14 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Downloading The Script...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Downloading The Script...${cierre}"
 cd $PREFIX/opt
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} nstalling Gems...${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} nstalling Gems...${cierre}"
 cd $PREFIX/opt/metasploit-framework
 # sed '/rbnacl/d' -i Gemfile.lock
 # sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -219,7 +219,7 @@ termux-elf-cleaner $PREFIX/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}*${azul}]${bicolor} Supprssing Warning${blanco}"
+echo -e "${azul}[${blanco}*${azul}]${bicolor} Supprssing Warning${cierre}"
 
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
@@ -265,6 +265,6 @@ sleep 0.1
 echo -e ""
 echo -e ""
 sleep 3
-echo -e "${azul}[${blanco}√${azul}]${bicolor} MSF Installed v6.3.31-dev-8b8acad.${blanco}"
+echo -e "${azul}[${blanco}√${azul}]${bicolor} MSF Installed v6.3.31-dev-8b8acad.${cierre}"
 sleep 1
-echo -e "${azul}[${blanco}√${azul}]${bicolor} Open The Console With: ${verde}msfconsole${blanco}"
+echo -e "${azul}[${blanco}√${azul}]${bicolor} Open The Console With: ${verde}msfconsole${cierre}"
