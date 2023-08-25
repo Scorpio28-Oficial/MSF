@@ -17,7 +17,6 @@ sleep 0.1
 }
 #
 # CÓDIGO
-yes|pkg install pv
 clear
 sleep 1
 echo -e "${azul}"
@@ -43,6 +42,7 @@ yes|apt update && apt upgrade
 yes|pkg install curl
 yes|pkg install wget
 yes|pkg uninstall ruby
+yes|pkg install pv
 echo -e ""
 echo -e ""
 sleep 1
@@ -266,6 +266,6 @@ sleep 0.1
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${azul}[${blanco}√${azul}]${bicolor} MSF Installed v6.3.31-dev-8b8acad.${cierre}" |pv -qL 45
+echo -e "${azul}[${blanco}√${azul}]${bicolor} MSF Installed v6.3.32-dev-8b8acad.${cierre}" |pv -qL 45
 sleep 1
 echo -e "${azul}[${blanco}√${azul}]${bicolor} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
