@@ -266,6 +266,6 @@ sleep 0.1
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}√${rojo}]${bicolor} MSF Installed v6.3.36-dev-9c02331.${cierre}" |pv -qL 45
+echo -e "${rojo}[${verde}√${rojo}]${bicolor} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
 sleep 1
 echo -e "${rojo}[${verde}√${rojo}]${bicolor} Open The Console With: ${negro}msfconsole${cierre}" |pv -qL 45
