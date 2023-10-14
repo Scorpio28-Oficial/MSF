@@ -36,7 +36,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Installing Required Packages...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Required Packages...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
 yes|pkg install curl
@@ -46,7 +46,7 @@ yes|pkg install pv
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Installing Of Metasploit-Frameword...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Of Metasploit-Frameword...${cierre}" |pv -qL 45
 sleep 0.5
 echo -e ""
 sleep 1
@@ -93,23 +93,23 @@ echo -e "${verde}                      ."
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Preparing The Installation...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Preparing The Installation...${cierre}" |pv -qL 45
 sleep 0.5
-echo -e "${rojo}[${verde}*${rojo}]${blanco} This Will Take A Few Minutes...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} This Will Take A Few Minutes...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Do Not Cancel The Installation...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Do Not Cancel The Installation...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} This will take a few minutes...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} This will take a few minutes...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
 echo -e ""
 echo -e ""
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Starting The Installation...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Starting The Installation...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Please Be Patient...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Please Be Patient...${cierre}" |pv -qL 45
 sleep 1
 # Loading spinner
-echo -e -n "${rojo}[${verde}*${rojo}]${blanco} Loading.....${bicolor}" |pv -qL 45
+echo -e -n "${blanco}[${verde}*${blanco}]${verde} Loading.....${bicolor}" |pv -qL 45
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
@@ -118,7 +118,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
 sleep 0.5
 echo -e "${cierre}"
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Dependencies wget, curl, zip tar, etc...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Dependencies wget, curl, zip tar, etc...${cierre}" |pv -qL 45
 sleep 0.5
 
 ## Remove not working repositories
@@ -163,7 +163,7 @@ python3 -m pip install requests
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Fix Ruby BigDecimal...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Fix Ruby BigDecimal...${cierre}" |pv -qL 45
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 rm -rf $PREFIX/opt/metasploit-framework
@@ -171,14 +171,14 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Downloading The Script...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Downloading The Script...${cierre}" |pv -qL 45
 cd $PREFIX/opt
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Installing Gems...${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Gems...${cierre}" |pv -qL 45
 cd $PREFIX/opt/metasploit-framework
 # sed '/rbnacl/d' -i Gemfile.lock
 # sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -220,7 +220,7 @@ termux-elf-cleaner $PREFIX/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}*${rojo}]${blanco} Supprssing Warning${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} Supprssing Warning${cierre}" |pv -qL 45
 
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
@@ -266,6 +266,6 @@ sleep 0.1
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${rojo}[${verde}√${rojo}]${blanco} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
+echo -e "${blanco}[${verde}*${blanco}]${verde} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
 sleep 1
-echo -e "${rojo}[${verde}√${rojo}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
+echo -e "$${blanco}[${verde}*${blanco}]${verde} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
