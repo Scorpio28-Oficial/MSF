@@ -294,7 +294,7 @@ done
 
 case $Opcion_Reiniciar in
 	y)
-		source $HOME/MSF/msfcosole
+		source $HOME/msfcosole
 		;;
 	n)
 sleep 1
