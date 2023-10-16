@@ -275,9 +275,6 @@ echo -e ""
 echo -e ""
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
-sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
-sleep 0.1
 echo -e ""
 sleep 1
 while :
@@ -297,7 +294,10 @@ done
 
 case $Opcion_Reiniciar in
 	1)
-		source msfconsole
+		source $HOME/MSF/msfcosole
 		;;
 	2)
+sleep 1
+echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
+sleep 0.1
 esac
