@@ -117,7 +117,7 @@ sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} Please Be Patient...${cierre}" |pv -qL 45
 sleep 1
 # Loading spinner
-echo -e -n "${blanco}[${verde}*${blanco}]${verde} Loading.....${bicolor}" |pv -qL 45
+echo -e -n "${verde}[${blanco}*${verde}]${blanco} Loading.....${blanco}" |pv -qL 45
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
