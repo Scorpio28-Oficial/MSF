@@ -279,7 +279,11 @@ echo -e ""
 sleep 1
 while :
 do
-echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:${cierre} "
+echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS.
+${verde}[${blanco}*${verde}]${blanco} YES >>>>>>>>> y
+${verde}[${blanco}*${verde}]${blanco} NO >>>>>>>>>> n
+${verde}[${blanco}*${verde}]${blanco} REINSTALL >>> r
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${cierre} "
 
 read -r Opcion_Reiniciar
 
