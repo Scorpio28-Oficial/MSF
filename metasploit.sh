@@ -283,7 +283,7 @@ echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OP
 ${verde}[${blanco}*${verde}]${blanco} YES >>>>>>>>> y
 ${verde}[${blanco}*${verde}]${blanco} NO >>>>>>>>>> n
 ${verde}[${blanco}*${verde}]${blanco} REINSTALL >>> r
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${cierre} "
+${verde}[${blanco}*${verde}]${blanco} CHOOSE ONE OPTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>${cierre} "
 
 read -r Opcion_Reiniciar
 
