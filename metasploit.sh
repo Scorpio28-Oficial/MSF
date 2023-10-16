@@ -293,10 +293,10 @@ clear
 done
 
 case $Opcion_Reiniciar in
-	1)
+	y)
 		source $HOME/MSF/msfcosole
 		;;
-	2)
+	n)
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
 sleep 0.1
