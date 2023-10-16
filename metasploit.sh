@@ -279,7 +279,7 @@ echo -e ""
 sleep 1
 while :
 do
-echo -e -n "${verde}[${blanco}*${verde}]${blanco} YOU WANT TO OPEN THE CONSOLE YES OR NO [y/n]?:${cierre} "
+echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:${cierre} "
 
 read -r Opcion_Reiniciar
 
