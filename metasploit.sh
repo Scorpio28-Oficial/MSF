@@ -59,45 +59,45 @@ sleep 0.5
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "      ${bicolor}.:okOOOkdc'           'cdkOOOko:."${cierre}
+echo -e "      ${verde}.:okOOOkdc'           'cdkOOOko:."${cierre}
 sleep 0.1
-echo -e "    ${bicolor}.xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."${cierre}
+echo -e "    ${verde}.xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."${cierre}
 sleep 0.1
-echo -e "   ${bicolor}:OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"${cierre}
+echo -e "   ${verde}:OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"${cierre}
 sleep 0.1
-echo -e "  ${bicolor}'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"${cierre}
+echo -e "  ${verde}'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"${cierre}
 sleep 0.1
-echo -e "  ${bicolor}oOOOOOOOO.${blanco}MMMM${verde}.oOOOOoOOOOl.${blanco}MMMM${verde},OOOOOOOOo"${cierre}
+echo -e "  ${verde}oOOOOOOOO.${blanco}MMMM${verde}.oOOOOoOOOOl.${blanco}MMMM${verde},OOOOOOOOo"${cierre}
 sleep 0.1
-echo -e "  ${bicolor}dOOOOOOOO.${blanco}MMMMMM${verde}.cOOOOOc.${blanco}MMMMMM${verde},OOOOOOOOx"${cierre}
+echo -e "  ${verde}dOOOOOOOO.${blanco}MMMMMM${verde}.cOOOOOc.${blanco}MMMMMM${verde},OOOOOOOOx"${cierre}
 sleep 0.1
-echo -e "  ${bicolor}lOOOOOOOO.${blanco}MMMMMMMMM${verde};d;${blanco}MMMMMMMMM${verde},OOOOOOOOl"${cierre}
+echo -e "  ${verde}lOOOOOOOO.${blanco}MMMMMMMMM${verde};d;${blanco}MMMMMMMMM${verde},OOOOOOOOl"${cierre}
 sleep 0.1
-echo -e "  ${bicolor}.OOOOOOOO.${blanco}MMM${verde}.;${blanco}MMMMMMMMMMM${verde};${blanco}MMMM${verde},OOOOOOOO."${cierre}
+echo -e "  ${verde}.OOOOOOOO.${blanco}MMM${verde}.;${blanco}MMMMMMMMMMM${verde};${blanco}MMMM${verde},OOOOOOOO."${cierre}
 sleep 0.1
-echo -e "   ${bicolor}cOOOOOOO.${blanco}MMM${verde}.OOc.${blanco}MMMMM${verde}'oOO.${blanco}MMM${verde},OOOOOOOc"${cierre}
+echo -e "   ${verde}cOOOOOOO.${blanco}MMM${verde}.OOc.${blanco}MMMMM${verde}'oOO.${blanco}MMM${verde},OOOOOOOc"${cierre}
 sleep 0.1
-echo -e "    ${bicolor}oOOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOOo"${cierre}
+echo -e "    ${verde}oOOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOOo"${cierre}
 sleep 0.1
-echo -e "     ${bicolor}lOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOl"${cierre}
+echo -e "     ${verde}lOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOl"${cierre}
 sleep 0.1
-echo -e "      ${bicolor};OOOO'${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde};OOOO;"${cierre}
+echo -e "      ${verde};OOOO'${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde};OOOO;"${cierre}
 sleep 0.1
-echo -e "       ${bicolor}.dOOo'${blanco}WM${verde}.OOOOocccxOOOO.${blanco}MX${verde}'xOOd."${cierre}
+echo -e "       ${verde}.dOOo'${blanco}WM${verde}.OOOOocccxOOOO.${blanco}MX${verde}'xOOd."${cierre}
 sleep 0.1
-echo -e "         ${bicolor},kOl'${blanco}M${verde}.OOOOOOOOOOOOO.${blanco}M${verde}'dOk,"${cierre}
+echo -e "         ${verde},kOl'${blanco}M${verde}.OOOOOOOOOOOOO.${blanco}M${verde}'dOk,"${cierre}
 sleep 0.1
-echo -e "           ${bicolor}:kk;.OOOOOOOOOOOOO.;Ok:"${cierre}
+echo -e "           ${verde}:kk;.OOOOOOOOOOOOO.;Ok:"${cierre}
 sleep 0.1
-echo -e "             ${bicolor};kOOOOOOOOOOOOOOOk:"${cierre}
+echo -e "             ${verde};kOOOOOOOOOOOOOOOk:"${cierre}
 sleep 0.1
-echo -e "               ${bicolor},xOOOOOOOOOOOx,"${cierre}
+echo -e "               ${verde},xOOOOOOOOOOOx,"${cierre}
 sleep 0.1
-echo -e "                 ${bicolor}.lOOOOOOOl."${cierre}
+echo -e "                 ${verde}.lOOOOOOOl."${cierre}
 sleep 0.1
-echo -e "                    ${bicolor},dOd,"${cierre}
+echo -e "                    ${verde},dOd,"${cierre}
 sleep 0.1
-echo -e "                      ${bicolor}."${cierre}
+echo -e "                      ${verde}."${cierre}
 echo -e ""
 sleep 0.5
 echo -e ""
