@@ -283,7 +283,7 @@ echo -e -n "${verde}[${blanco}*${verde}]${blanco} YOU WANT TO OPEN THE CONSOLE Y
 
 read -r Opcion_Reiniciar
 
-[ "$Opcion_Reiniciar" == "y" ]||[ "$Opcion_Reiniciar" == "n" ] && break
+[ "$Opcion_Reiniciar" == "y" ]||[ "$Opcion_Reiniciar" == "n" ]||[ "$Opcion_Reiniciar" == "r" ] && break
 sleep 0.1
 echo -e ""
 sleep 1
@@ -297,6 +297,9 @@ case $Opcion_Reiniciar in
 		source $HOME/MSF/msfconsole
 		;;
 	n)
+                source $HOME/MSF/metasploit.sh
+		;;
+	r)
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
 sleep 0.1
