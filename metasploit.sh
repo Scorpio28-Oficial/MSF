@@ -280,10 +280,10 @@ sleep 1
 while :
 do
 echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
-${verde}[${blanco}*${verde}]${blanco} OPEN CONSOLE ━━━━━━━━━━━═>>> y
-${verde}[${blanco}*${verde}]${blanco} GO OUT ━━━━━━━━━━━━━━━━═>>> n
-${verde}[${blanco}*${verde}]${blanco} REINSTALL ━━━━━━━━━━━━━━═>>> r
-${verde}[${blanco}*${verde}]${blanco} CHOOSE ONE OPTION ━━━━━━━═>>>${cierre} "
+${verde}[${blanco}+${verde}]${blanco} OPEN CONSOLE >>>>>>>>>>>>>>>>>>>>> y
+${verde}[${blanco}+${verde}]${blanco} GO OUT >>>>>>>>>>>>>>>>>>>>>>>>>>> n
+${verde}[${blanco}+${verde}]${blanco} REINSTALL >>>>>>>>>>>>>>>>>>>>>>>> r
+${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━━━━━═>>>${cierre} "
 
 read -r Opcion_Reiniciar
 
