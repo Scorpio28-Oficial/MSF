@@ -300,10 +300,10 @@ case $Opcion_Reiniciar in
 	y)
 		source $HOME/MSF/msfconsole
 		;;
-	n)
+	r)
                 source $HOME/MSF/metasploit.sh
 		;;
-	r)
+	n)
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
 sleep 0.1
