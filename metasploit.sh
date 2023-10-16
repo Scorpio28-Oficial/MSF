@@ -19,94 +19,102 @@ sleep 0.1
 # CÓDIGO
 clear
 sleep 1
-echo -e "${verde}"
+echo -e "${blanco}"
 sleep 0.1
-echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
+echo -e "${bicolor}███╗   ███╗███████╗███████╗"${cierre}
 sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"${blanco}
+echo -e "${bicolor}████╗ ████║██╔════╝██╔════╝"${cierre}
 sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"${blanco}
+echo -e "${bicolor}██╔████╔██║███████╗█████╗"${cierre}
 sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"${blanco}
+echo -e "${bicolor}██║╚██╔╝██║╚════██║██╔══╝"${cierre}
 sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"${blanco}
+echo -e "${bicolor}██║ ╚═╝ ██║███████║██║"${cierre}
 sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e "${bicolor}╚═╝     ╚═╝╚══════╝╚═╝"${cierre}
+sleep 0.1
+echo -e ""
+sleep 0.1
+echo -e "${bicolor}-------C-O-M-M-U-N-I-T-I-E-S-------"${cierre}
+sleep 0.1
+echo -e "${bicolor}INFORMATIC IN TERMUX / WHITE HACKS"${cierre}
+sleep 0.1
+echo -e "${bicolor}----------------[+]----------------"${cierre}
 sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Required Packages...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Required Packages...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
-yes|pkg install curl
-yes|pkg install wget
-yes|pkg uninstall ruby
-yes|pkg install pv
+pkg install curl -y
+pkg install wget -y
+pkg uninstall ruby -y
+pkg install pv -y
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Of Metasploit-Frameword...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Of Metasploit-Frameword...${cierre}" |pv -qL 45
 sleep 0.5
 echo -e ""
 sleep 1
 echo -e ""
-echo -e "${verde}      .:okOOOkdc'           'cdkOOOko:."
+echo -e "      ${bicolor}.:okOOOkdc'           'cdkOOOko:."${cierre}
 sleep 0.1
-echo -e "${verde}    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."
+echo -e "    ${bicolor}.xOOOOOOOOOOOOc       cOOOOOOOOOOOOx."${cierre}
 sleep 0.1
-echo -e "${verde}   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"
+echo -e "   ${bicolor}:OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:"${cierre}
 sleep 0.1
-echo -e "${verde}  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"
+echo -e "  ${bicolor}'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'"${cierre}
 sleep 0.1
-echo -e "${verde}  oOOOOOOOO.${blanco}MMMM${verde}.oOOOOoOOOOl.${blanco}MMMM${verde},OOOOOOOOo"
+echo -e "  ${bicolor}oOOOOOOOO.${blanco}MMMM${verde}.oOOOOoOOOOl.${blanco}MMMM${verde},OOOOOOOOo"${cierre}
 sleep 0.1
-echo -e "${verde}  dOOOOOOOO.${blanco}MMMMMM${verde}.cOOOOOc.${blanco}MMMMMM${verde},OOOOOOOOx"
+echo -e "  ${bicolor}dOOOOOOOO.${blanco}MMMMMM${verde}.cOOOOOc.${blanco}MMMMMM${verde},OOOOOOOOx"${cierre}
 sleep 0.1
-echo -e "${verde}  lOOOOOOOO.${blanco}MMMMMMMMM${verde};d;${blanco}MMMMMMMMM${verde},OOOOOOOOl"
+echo -e "  ${bicolor}lOOOOOOOO.${blanco}MMMMMMMMM${verde};d;${blanco}MMMMMMMMM${verde},OOOOOOOOl"${cierre}
 sleep 0.1
-echo -e "${verde}  .OOOOOOOO.${blanco}MMM${verde}.;${blanco}MMMMMMMMMMM${verde};${blanco}MMMM${verde},OOOOOOOO."
+echo -e "  ${bicolor}.OOOOOOOO.${blanco}MMM${verde}.;${blanco}MMMMMMMMMMM${verde};${blanco}MMMM${verde},OOOOOOOO."${cierre}
 sleep 0.1
-echo -e "${verde}   cOOOOOOO.${blanco}MMM${verde}.OOc.${blanco}MMMMM${verde}'oOO.${blanco}MMM${verde},OOOOOOOc"
+echo -e "   ${bicolor}cOOOOOOO.${blanco}MMM${verde}.OOc.${blanco}MMMMM${verde}'oOO.${blanco}MMM${verde},OOOOOOOc"${cierre}
 sleep 0.1
-echo -e "${verde}    oOOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOOo"
+echo -e "    ${bicolor}oOOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOOo"${cierre}
 sleep 0.1
-echo -e "${verde}     lOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOl"
+echo -e "     ${bicolor}lOOOOO.${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde},OOOOOl"${cierre}
 sleep 0.1
-echo -e "${verde}      ;OOOO'${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde};OOOO;"
+echo -e "      ${bicolor};OOOO'${blanco}MMM${verde}.OOOO.${blanco}MMM${verde}:OOOO.${blanco}MMM${verde};OOOO;"${cierre}
 sleep 0.1
-echo -e "${verde}       .dOOo'${blanco}WM${verde}.OOOOocccxOOOO.${blanco}MX${verde}'xOOd."
+echo -e "       ${bicolor}.dOOo'${blanco}WM${verde}.OOOOocccxOOOO.${blanco}MX${verde}'xOOd."${cierre}
 sleep 0.1
-echo -e "${verde}         ,kOl'${blanco}M${verde}.OOOOOOOOOOOOO.${blanco}M${verde}'dOk,"
+echo -e "         ${bicolor},kOl'${blanco}M${verde}.OOOOOOOOOOOOO.${blanco}M${verde}'dOk,"${cierre}
 sleep 0.1
-echo -e "${verde}           :kk;.OOOOOOOOOOOOO.;Ok:"
+echo -e "           ${bicolor}:kk;.OOOOOOOOOOOOO.;Ok:"${cierre}
 sleep 0.1
-echo -e "${verde}             ;kOOOOOOOOOOOOOOOk:"
+echo -e "             ${bicolor};kOOOOOOOOOOOOOOOk:"${cierre}
 sleep 0.1
-echo -e "${verde}               ,xOOOOOOOOOOOx,"
+echo -e "               ${bicolor},xOOOOOOOOOOOx,"${cierre}
 sleep 0.1
-echo -e "${verde}                 .lOOOOOOOl."
+echo -e "                 ${bicolor}.lOOOOOOOl."${cierre}
 sleep 0.1
-echo -e "${verde}                    ,dOd,"
+echo -e "                    ${bicolor},dOd,"${cierre}
 sleep 0.1
-echo -e "${verde}                      ."
+echo -e "                      ${bicolor}."${cierre}
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${blanco}[${verde}*${blanco}]${verde} Preparing The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Preparing The Installation...${cierre}" |pv -qL 45
 sleep 0.5
-echo -e "${blanco}[${verde}*${blanco}]${verde} This Will Take A Few Minutes...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} This Will Take A Few Minutes...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Do Not Cancel The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Do Not Cancel The Installation...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} This will take a few minutes...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} This will take a few minutes...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
 echo -e ""
 echo -e ""
-echo -e "${blanco}[${verde}*${blanco}]${verde} Starting The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Starting The Installation...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Please Be Patient...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Please Be Patient...${cierre}" |pv -qL 45
 sleep 1
 # Loading spinner
 echo -e -n "${blanco}[${verde}*${blanco}]${verde} Loading.....${bicolor}" |pv -qL 45
@@ -118,7 +126,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
 sleep 0.5
 echo -e "${cierre}"
-echo -e "${blanco}[${verde}*${blanco}]${verde} Dependencies wget, curl, zip tar, etc...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Dependencies wget, curl, zip tar, etc...${cierre}" |pv -qL 45
 sleep 0.5
 
 ## Remove not working repositories
@@ -163,7 +171,7 @@ python3 -m pip install requests
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Fix Ruby BigDecimal...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Fix Ruby BigDecimal...${cierre}" |pv -qL 45
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 rm -rf $PREFIX/opt/metasploit-framework
@@ -171,14 +179,14 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Downloading The Script...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Downloading The Script...${cierre}" |pv -qL 45
 cd $PREFIX/opt
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Installing Gems...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Gems...${cierre}" |pv -qL 45
 cd $PREFIX/opt/metasploit-framework
 # sed '/rbnacl/d' -i Gemfile.lock
 # sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -220,7 +228,7 @@ termux-elf-cleaner $PREFIX/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} Supprssing Warning${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Supprssing Warning${cierre}" |pv -qL 45
 
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
@@ -243,29 +251,53 @@ echo -e ""
 sleep 0.5
 echo -e ""
 sleep 0.1
-echo -e "${verde}███╗   ███╗███████╗███████╗"${blanco}
+echo -e "${bicolor}███╗   ███╗███████╗███████╗"${cierre}
 sleep 0.1
-echo -e "${verde}████╗ ████║██╔════╝██╔════╝"${blanco}
+echo -e "${bicolor}████╗ ████║██╔════╝██╔════╝"${cierre}
 sleep 0.1
-echo -e "${verde}██╔████╔██║███████╗█████╗"${blanco}
+echo -e "${bicolor}██╔████╔██║███████╗█████╗"${cierre}
 sleep 0.1
-echo -e "${verde}██║╚██╔╝██║╚════██║██╔══╝"${blanco}
+echo -e "${bicolor}██║╚██╔╝██║╚════██║██╔══╝"${cierre}
 sleep 0.1
-echo -e "${verde}██║ ╚═╝ ██║███████║██║"${blanco}
+echo -e "${bicolor}██║ ╚═╝ ██║███████║██║"${cierre}
 sleep 0.1
-echo -e "${verde}╚═╝     ╚═╝╚══════╝╚═╝"${blanco}
+echo -e "${bicolor}╚═╝     ╚═╝╚══════╝╚═╝"${cierre}
 sleep 0.1
 echo -e ""
 sleep 0.1
-echo -e "${verde}-------C-O-M-M-U-N-I-T-I-E-S-------"
+echo -e "${bicolor}-------C-O-M-M-U-N-I-T-I-E-S-------"${cierre}
 sleep 0.1
-echo -e "${verde}INFORMATIC IN TERMUX / WHITE HACKS"
+echo -e "${bicolor}INFORMATIC IN TERMUX / WHITE HACKS"${cierre}
 sleep 0.1
-echo -e "${verde}----------------[+]----------------"
+echo -e "${bicolor}----------------[+]----------------"${cierre}
 sleep 0.1
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${blanco}[${verde}*${blanco}]${verde} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
 sleep 1
-echo -e "$${blanco}[${verde}*${blanco}]${verde} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
+sleep 0.1
+echo -e ""
+sleep 1
+while :
+do
+echo -e -n "${verde}[${blanco}*${verde}]${blanco} YOU WANT TO OPEN THE CONSOLE YES OR NO [y/n]?:${cierre} "
+
+read -r Opcion_Reiniciar
+
+[ "$Opcion_Reiniciar" == "y" ]||[ "$Opcion_Reiniciar" == "n" ] && break
+sleep 0.1
+echo -e ""
+sleep 1
+echo -e "${verde}[${blanco}*${verde}]${rojo} WRONG CHOICE!"
+sleep 2
+clear
+done
+
+case $Opcion_Reiniciar in
+	1)
+		source msfconsole
+		;;
+	2)
+esac
