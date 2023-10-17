@@ -32,14 +32,6 @@ sleep 0.1
 echo -e "${bicolor}██║ ╚═╝ ██║███████║██║"${cierre}
 sleep 0.1
 echo -e "${bicolor}╚═╝     ╚═╝╚══════╝╚═╝"${cierre}
-sleep 0.1
-echo -e ""
-sleep 0.1
-echo -e "${bicolor}-------C-O-M-M-U-N-I-T-I-E-S-------"${cierre}
-sleep 0.1
-echo -e "${bicolor}INFORMATIC IN TERMUX / WHITE HACKS"${cierre}
-sleep 0.1
-echo -e "${bicolor}----------------[+]----------------"${cierre}
 sleep 0.5
 echo -e ""
 echo -e ""
@@ -262,15 +254,7 @@ sleep 0.1
 echo -e "${bicolor}██║ ╚═╝ ██║███████║██║"${cierre}
 sleep 0.1
 echo -e "${bicolor}╚═╝     ╚═╝╚══════╝╚═╝"${cierre}
-sleep 0.1
-echo -e ""
-sleep 0.1
-echo -e "${bicolor}-------C-O-M-M-U-N-I-T-I-E-S-------"${cierre}
-sleep 0.1
-echo -e "${bicolor}INFORMATIC IN TERMUX / WHITE HACKS"${cierre}
-sleep 0.1
-echo -e "${bicolor}----------------[+]----------------"${cierre}
-sleep 0.1
+sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
