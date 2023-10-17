@@ -279,11 +279,11 @@ echo -e ""
 sleep 1
 while :
 do
-echo -e -n "${verde}[${blanco}*${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
+echo -e -n "${verde}[${blanco}+${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
 ${verde}[${blanco}+${verde}]${blanco} OPEN CONSOLE >>>>>>>>>>>>> y
 ${verde}[${blanco}+${verde}]${blanco} REINSTALL MSF >>>>>>>>>>>> r
 ${verde}[${blanco}+${verde}]${blanco} EXIT >>>>>>>>>>>>>>>>>>>>> e
-${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━═>>>${cierre} "
+${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━═>>>${cierre} " |pv -qL 45
 
 read -r Opcion_Reiniciar
 
@@ -291,7 +291,7 @@ read -r Opcion_Reiniciar
 sleep 0.1
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${rojo} WRONG CHOICE!"
+echo -e "${verde}[${blanco}!${verde}]${rojo} WRONG CHOICE!"
 sleep 2
 clear
 done
@@ -305,6 +305,6 @@ case $Opcion_Reiniciar in
 		;;
 	e)
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}✓${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
 sleep 0.1
 esac
