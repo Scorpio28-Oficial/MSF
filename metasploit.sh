@@ -260,6 +260,7 @@ echo -e ""
 sleep 1
 echo -e "${verde}[${blanco}*${verde}]${blanco} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
 echo -e ""
+chmod +x *msfconsole 
 sleep 1
 while :
 do
