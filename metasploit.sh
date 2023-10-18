@@ -282,7 +282,7 @@ done
 
 case $Opcion_Reiniciar in
 	y)
-		source $HOME/MSF/msfconsole
+		source /data/data/com.termux/files/usr/bin/msfconsole
 		;;
 	r)
                 source $HOME/MSF/metasploit.sh
