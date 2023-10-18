@@ -264,14 +264,14 @@ sleep 1
 while :
 do
 echo -e -n "${verde}[${blanco}+${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
-${verde}[${blanco}+${verde}]${blanco} OPEN CONSOLE >>>>>>>>>>>>> y
-${verde}[${blanco}+${verde}]${blanco} REINSTALL MSF >>>>>>>>>>>> r
-${verde}[${blanco}+${verde}]${blanco} EXIT >>>>>>>>>>>>>>>>>>>>> e
+${verde}[${blanco}+${verde}]${blanco} OPEN CONSOLE >>>>>>>>>>>>> 1
+${verde}[${blanco}+${verde}]${blanco} REINSTALL MSF >>>>>>>>>>>> 2
+${verde}[${blanco}+${verde}]${blanco} EXIT >>>>>>>>>>>>>>>>>>>>> 3
 ${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━═>>>${cierre} " |pv -qL 45
 
 read -r Opcion_Reiniciar
 
-[ "$Opcion_Reiniciar" == "y" ]||[ "$Opcion_Reiniciar" == "e" ]||[ "$Opcion_Reiniciar" == "r" ] && break
+[ "$Opcion_Reiniciar" == "1" ]||[ "$Opcion_Reiniciar" == "2" ]||[ "$Opcion_Reiniciar" == "3" ] && break
 sleep 0.1
 echo -e ""
 sleep 1
@@ -281,13 +281,13 @@ clear
 done
 
 case $Opcion_Reiniciar in
-	y)
+	1)
 		source $PREFIX/bin/msfconsole
 		;;
-	r)
+	2)
                 source $HOME/MSF/metasploit.sh
 		;;
-	e)
+	3)
 sleep 1
 echo -e "${verde}[${blanco}✓${verde}]${blanco} Open The Console With: ${verde}msfconsole${cierre}" |pv -qL 45
 sleep 0.1
