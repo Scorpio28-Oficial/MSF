@@ -1,5 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-#!/bin/bash
 #
 # Created by: Scorpio28
 #
@@ -36,7 +35,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Required Packages...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} INSTALL REQUIRED PACKAGES...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
 pkg install curl -y
@@ -46,7 +45,7 @@ pkg install pv -y
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Of Metasploit-Frameword...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} INSTALLING OF METASPLOIT-FRAMEWORK...${cierre}" |pv -qL 45
 sleep 0.5
 echo -e ""
 sleep 1
@@ -93,23 +92,23 @@ echo -e "                      ${verde}."${cierre}
 echo -e ""
 sleep 0.5
 echo -e ""
-echo -e "${verde}[${blanco}*${verde}]${blanco} Preparing The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} PREPARING THE INSTALLATION...${cierre}" |pv -qL 45
 sleep 0.5
-echo -e "${verde}[${blanco}*${verde}]${blanco} This Will Take A Few Minutes...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} THIS WILL TAKE A FEW MINUTES...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Do Not Cancel The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} DO NOT CANCEL THE INSTALLATION...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} This will take a few minutes...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} THIS WILL TAKE A FEW MINUTES...${cierre}" |pv -qL 45
 sleep 1
 apt update && apt upgrade -y
 echo -e ""
 echo -e ""
-echo -e "${verde}[${blanco}*${verde}]${blanco} Starting The Installation...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} STARTING THE INSTALLATION...${cierre}" |pv -qL 45
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Please Be Patient...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} PLEASE BE PATIENT...${cierre}" |pv -qL 45
 sleep 1
 # Loading spinner
-echo -e -n "${verde}[${blanco}*${verde}]${blanco} Loading.....${blanco}" |pv -qL 45
+echo -e -n "${verde}[${blanco}*${verde}]${blanco} LOADING.....${blanco}" |pv -qL 45
 source <(echo "IyEvYmluL2Jhc2gKc3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGlu
 ICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9u
 ZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBp
@@ -118,7 +117,7 @@ ICAgIHNsZWVwIDAuMjsKICAgIGRvbmU7CiAgZG9uZQp9Cgpjb3VudAo=" | base64 -d)
 
 sleep 0.5
 echo -e "${cierre}"
-echo -e "${verde}[${blanco}*${verde}]${blanco} Dependencies wget, curl, zip tar, etc...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} DEPENDENCIES WGET, CURL, ZIP TAR, ETC...${cierre}" |pv -qL 45
 sleep 0.5
 
 ## Remove not working repositories
@@ -163,7 +162,7 @@ python3 -m pip install requests
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Fix Ruby BigDecimal...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} FIX RUBY BIGDECIMAL...${cierre}" |pv -qL 45
 source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
 
 rm -rf $PREFIX/opt/metasploit-framework
@@ -171,14 +170,14 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Downloading The Script...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} DoWNLOADING THE SCRIPT...${cierre}" |pv -qL 45
 cd $PREFIX/opt
 git clone https://github.com/rapid7/metasploit-framework.git --depth=1
 
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Installing Gems...${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} INSTALLING GEMS...${cierre}" |pv -qL 45
 cd $PREFIX/opt/metasploit-framework
 # sed '/rbnacl/d' -i Gemfile.lock
 # sed '/rbnacl/d' -i metasploit-framework.gemspec
@@ -220,7 +219,7 @@ termux-elf-cleaner $PREFIX/lib/ruby/gems/*/gems/pg-*/lib/pg_ext.so
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} Supprssing Warning${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} SUPPRSSING WARNING${cierre}" |pv -qL 45
 
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
@@ -258,7 +257,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${blanco} MSF Installed v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}*${verde}]${blanco} MSF INSTALLED v6.3.39-dev-9c02331.${cierre}" |pv -qL 45
 echo -e ""
 sleep 1
 while :
@@ -267,7 +266,7 @@ echo -e -n "${verde}[${blanco}+${verde}]${blanco} SÉLECTIONNEZ UNE DES TROIS OP
 ${verde}[${blanco}+${verde}]${blanco} OPEN CONSOLE >>>>>>>>>>>>> 1
 ${verde}[${blanco}+${verde}]${blanco} REINSTALL MSF >>>>>>>>>>>> 2
 ${verde}[${blanco}+${verde}]${blanco} EXIT >>>>>>>>>>>>>>>>>>>>> 3
-${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━═>>>${cierre} " |pv -qL 45
+${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━━═>>>${cierre} " |pv -qL 45
 
 read -r Opcion_Reiniciar
 
