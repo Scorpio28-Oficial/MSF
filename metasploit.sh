@@ -276,7 +276,6 @@ echo -e ""
 sleep 1
 echo -e "${verde}[${blanco}!${verde}]${rojo} WRONG CHOICE!"
 sleep 2
-clear
 done
 
 case $Opcion_Reiniciar in
