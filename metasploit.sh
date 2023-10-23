@@ -266,7 +266,7 @@ echo -e -n "${verde}[${blanco}+${verde}]${verde} SÉLECTIONNEZ UNE DES TROIS OPT
 ${verde}[${blanco}+${verde}]${verde} OPEN CONSOLE >>>>>>>>>>>>>>>>>>>>${blanco} 1
 ${verde}[${blanco}+${verde}]${verde} REINSTALL MSF >>>>>>>>>>>>>>>>>>>${blanco} 2
 ${verde}[${blanco}+${verde}]${verde} EXIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>${blanco} 3
-${verde}[${blanco}+${verde}]${verde} CHOOSE ONE OPTION ━━━━━━━═>>>${cierre} " |pv -qL 45
+${verde}[${blanco}+${verde}]${verde} CHOOSE ONE OPTION ━━━━━━━═>>>${amarillo} " |pv -qL 45
 
 read -r Opcion_Reiniciar
 
