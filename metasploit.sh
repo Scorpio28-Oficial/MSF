@@ -263,10 +263,10 @@ sleep 1
 while :
 do
 echo -e -n "${verde}[${blanco}!${verde}]${verde} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
-${verde}[${blanco}+${verde}]${amarillo} OPEN CONSOLE >>>>>>>>>>>>>>>>>>>>${blanco} 1
-${verde}[${blanco}+${verde}]${amarillo} REINSTALL MSF >>>>>>>>>>>>>>>>>>>${blanco} 2
-${verde}[${blanco}+${verde}]${amarillo} EXIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>${blanco} 3
-${verde}[${blanco}+${verde}]${amarillo} CHOOSE ONE OPTION ━━━━━━━═>>>${cierre} " |pv -qL 45
+${verde}[${blanco}+${verde}]${blqnco} OPEN CONSOLE >>>>>>>>>>>>>>>>>>>>${verde} 1
+${verde}[${blanco}+${verde}]${blanco} REINSTALL MSF >>>>>>>>>>>>>>>>>>>${verde} 2
+${verde}[${blanco}+${verde}]${blanco} EXIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>${verde} 3
+${verde}[${blanco}+${verde}]${blanco} CHOOSE ONE OPTION ━━━━━━━═>>>${verde} "${cierre} |pv -qL 45
 
 read -r Opcion_Reiniciar
 
