@@ -257,12 +257,12 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}*${verde}]${verde} MSF INSTALLED v6.3.40-dev-9c02331.${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}✓${verde}]${verde} MSF INSTALLED v6.3.40-dev-9c02331.${cierre}" |pv -qL 45
 echo -e ""
 sleep 1
 while :
 do
-echo -e -n "${verde}[${blanco}+${verde}]${verde} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
+echo -e -n "${verde}[${blanco}!${verde}]${verde} SÉLECTIONNEZ UNE DES TROIS OPTIONS:
 ${verde}[${blanco}+${verde}]${amarillo} OPEN CONSOLE >>>>>>>>>>>>>>>>>>>>${blanco} 1
 ${verde}[${blanco}+${verde}]${amarillo} REINSTALL MSF >>>>>>>>>>>>>>>>>>>${blanco} 2
 ${verde}[${blanco}+${verde}]${amarillo} EXIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>${blanco} 3
