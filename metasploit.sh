@@ -257,7 +257,7 @@ sleep 0.5
 echo -e ""
 echo -e ""
 sleep 1
-echo -e "${verde}[${blanco}✓${verde}]${verde} MSF INSTALLED v6.4.77-dev-679c74f.${cierre}" |pv -qL 45
+echo -e "${verde}[${blanco}✓${verde}]${verde} MSF INSTALLED v6.4.82-dev-7f833ce.${cierre}" |pv -qL 45
 echo -e ""
 sleep 1
 while :
